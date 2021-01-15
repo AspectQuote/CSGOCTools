@@ -250,6 +250,7 @@ html {
   font-size: 15px;
   color: var(--tc);
   background: rgba(0,0,0,0.4);
+  cursor: default;
 }
 .tip:first-letter{
   padding-left: 20px;
@@ -408,6 +409,7 @@ html {
   border-bottom: 1px solid var(--ac);
   font-size: 20px;
   width: 60%;
+  text-shadow: 0px 0px 2px black;
 }
 .changelog div:before {
   content: 'Version '
@@ -416,6 +418,7 @@ html {
   font-size: 13px;
   color: var(--tc);
   display: block;
+  text-shadow: 0px 0px 2px black;
 }
 .changelog span:before {
   content: '- ';
@@ -476,6 +479,10 @@ html {
   visibility: visible;
   font-size: 14px;
 }
+.ic .ict:hover {
+  opacity: 0;
+  visibility: hidden;
+}
 .ic .ict:after {
   content: '';
   width: 0;
@@ -492,25 +499,55 @@ html {
 .milspec {
   filter: drop-shadow(0px 0px 4px #4b69ff);
   color: #4b69ff;
+  transition: 0.5s;
+}
+.milspec:hover {
+  filter: drop-shadow(0px 0px 7px #4b69ff);
+  cursor: default;
 }
 .restricted {
   filter: drop-shadow(0px 0px 4px #8847ff);
   color: #8847ff;
+  transition: 0.5s;
+}
+.restricted:hover {
+  filter: drop-shadow(0px 0px 7px #8847ff);
+  cursor: default;
 }
 .classified {
   filter: drop-shadow(0px 0px 4px #d32ce6);
   color: #d32ce6;
+  transition: 0.5s;
+}
+.classified:hover {
+  filter: drop-shadow(0px 0px 7px #d32ce6);
+  cursor: default;
 }
 .covert {
   filter: drop-shadow(0px 0px 4px #eb4b4b);
   color: #eb4b4b;
+  transition: 0.5s;
+}
+.covert:hover {
+  filter: drop-shadow(0px 0px 7px #eb4b4b);
+  cursor: default;
 }
 .gold {
   filter: drop-shadow(0px 0px 4px #dead00);
   color: #dead00;
+  transition: 0.5s;
+}
+.gold:hover {
+  filter: drop-shadow(0px 0px 7px #dead00);
+  cursor: default;
 }
 .stattrak {
   color: #cf6a32;
+  transition: 0.25s;
+}
+.stattrak:hover {
+  filter: drop-shadow(0px 0px 7px #cf6a32);
+  cursor: default;
 }
 .tip span {
   filter: none;
