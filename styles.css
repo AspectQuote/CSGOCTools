@@ -56,19 +56,21 @@ html {
   position: absolute;
   opacity: 0;
   transition: 0.25s;
-  width: 140px;
   padding-left: 10px;
   font-size: 12px;
-  width: 150px;
+  width: 190px;
   overflow: hidden;
   color: var(--tc);
 }
 #leftnavbarbottomflavor a {
   text-decoration: underline;
 }
+#leftnavbarbottomflavor span {
+  color: var(--ac);
+}
 .leftnavbar:hover #leftnavbarbottomflavor {
   opacity: 1;
-  width: 150px;
+  width: 190px;
 }
 .leftnavbar:after {
   content: '';
@@ -213,6 +215,10 @@ html {
 #content p:first-letter {
   padding-left: 10px;
 }
+#content a {
+  text-decoration: underline;
+  filter: brightness(1.2);
+}
 
 .pageheader {
   font-size: 60px;
@@ -229,4 +235,201 @@ html {
   padding: 0px 0px 30px 20px;
   color: var(--ac);
   user-select: none;
+}
+
+.tip {
+  width: 80%;
+  padding: 25px 5% 20px 5%;
+  margin-left: 5%;
+  margin-top: 40px;
+  border: 2px solid var(--ac);
+  position: relative;
+  font-size: 15px;
+  color: var(--tc);
+  background: rgba(0,0,0,0.4);
+}
+.tip:first-letter{
+  padding-left: 20px;
+}
+.tip:after {
+  content: 'Tip!';
+  border-radius: 5px;
+  padding: 5px 20px 5px 20px;
+  border: 1px solid var(--ac);
+  top: -17px;
+  left: 30px;
+  position: absolute;
+  background: var(--bgc);
+}
+
+.coder {
+  width: 90%;
+  padding: 25px 2.5% 20px 2.5%;
+  margin-left: 2.5%;
+  margin: 40px 0px 20px 0px;
+  border: 2px solid var(--ac);
+  position: relative;
+  font-size: 15px;
+  color: var(--tc);
+  background: rgba(0,0,0,0.7);
+  height: 75px;
+}
+.codername {
+  border-radius: 5px;
+  padding: 5px 20px 5px 20px;
+  border: 1px solid var(--ac);
+  top: -17px;
+  left: 30px;
+  position: absolute;
+  background: var(--bgc);
+}
+.coderpfp {
+  float: left;
+  height: 100%;
+  width: 75px;
+  border-right: 2px solid var(--ac);
+  padding-right: 20px;
+  margin-right: 20px;
+}
+.coderpfp img {
+  height: 100%;
+  border-radius: 20px;
+  font-size: 0px;
+}
+.coderdesc {
+  width: 100%;
+  height: 100%;
+}
+
+.download {
+  width: 80%;
+  padding: 25px 5% 20px 5%;
+  margin-left: 5%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: 2px solid var(--ac);
+  position: relative;
+  font-size: 15px;
+  color: var(--tc);
+  background: rgba(0,0,0,0.4);
+  text-align: center;
+}
+.download:after {
+  content: 'Download';
+  border-radius: 5px;
+  padding: 5px 20px 5px 20px;
+  border: 1px solid var(--ac);
+  top: -17px;
+  left: 30px;
+  position: absolute;
+  background: var(--bgc);
+}
+.download a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: left;
+  transition: 0.5s;
+  position: relative;
+  background: linear-gradient(270deg, rgba(222,173,0,1) 0%, rgba(69,69,69,0.3897934173669467) 100%);
+  background-repeat: no-repeat;
+  color: rgba(16,20,32,1);
+  font-size: 24px;
+  padding: 20px 2% 20px 2%;
+  border-radius: 10px;
+  border: 3px solid var(--ac);
+  user-select: none;
+}
+.download a:hover {
+  filter: brightness(1.3);
+  cursor: pointer;
+  color: var(--tc);
+}
+.download a:after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  background-repeat: no-repeat;
+  top: 0;
+  right: 0;
+  position: absolute;
+  background-image: url('icons/tampermonkey.png');
+  background-size: cover;
+}
+.downloadcasescript {
+  display: inline-block;
+  float: left;
+  width: 41%;
+  margin: 0px 2% 0px 2%;
+}
+.downloadmissionscript {
+  display: inline-block;
+  float: right;
+  width: 41%;
+  margin: 0px 2% 0px 2%;
+}
+.downloadbothscripts {
+  display: inline-block;
+  width: 92%;
+  margin: 20px 2% 0px 2%;
+}
+
+.changelog {
+  width: 80%;
+  padding: 25px 5% 30px 5%;
+  margin-left: 5%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: 2px solid var(--tc);
+  position: relative;
+  font-size: 15px;
+  color: var(--tc);
+  background: var(--bgc);
+}
+.changelog:after {
+  content: 'Changelog';
+  border-radius: 5px;
+  padding: 5px 20px 5px 20px;
+  border: 1px solid var(--tc);
+  top: -17px;
+  left: 30px;
+  position: absolute;
+  color: var(--ac);
+  background: var(--bgc);
+}
+.changelog div {
+  color: var(--ac);
+  filter: brightness(1.3);
+  padding-top: 20px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid var(--ac);
+  font-size: 20px;
+  width: 60%;
+}
+.changelog div:before {
+  content: 'Version '
+}
+.changelog span {
+  font-size: 13px;
+  color: var(--tc);
+  display: block;
+}
+.changelog span:before {
+  content: '- ';
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+::-webkit-scrollbar:hover {
+  opacity: 0.8;
+}
+::-webkit-scrollbar-track {
+  background: var(--bgc);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--dac);
+  border-radius: 5px;
 }
