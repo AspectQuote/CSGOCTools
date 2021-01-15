@@ -55,6 +55,7 @@ html {
   bottom: 10px; left: 0;
   position: absolute;
   opacity: 0;
+  visibility: hidden;
   transition: 0.25s;
   padding-left: 10px;
   font-size: 12px;
@@ -70,6 +71,7 @@ html {
 }
 .leftnavbar:hover #leftnavbarbottomflavor {
   opacity: 1;
+  visibility: visible;
   width: 190px;
 }
 .leftnavbar:after {
@@ -204,6 +206,7 @@ html {
   border-bottom: 1px solid var(--dac);
   user-select: none;
   margin-bottom: 10px;
+  white-space: nowrap;
 }
 #content p {
   font-size: 13px;
@@ -416,6 +419,101 @@ html {
 }
 .changelog span:before {
   content: '- ';
+}
+
+.weaponicon {
+  height: 100%;
+  width: 100%;
+  font-size: 0px;
+}
+.ic {
+  height:91px;
+  width:121px;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  margin: 20px;
+  transition: 0.25s;
+}
+.ic:hover {
+  filter: saturate(1.2);
+  cursor: default;
+}
+.ic div {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 12px;
+  cursor: default;
+  transition: 0.25s;
+}
+.ic:hover div {
+  font-size: 14px;
+  width: 115%;
+  left: -7.5%;
+}
+.ic .ict {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  transition: 0.25s;
+  opacity: 0;
+  background: rgba(0,0,0,0.9);
+  color: var(--tc);
+  padding: 5px;
+  border: 1px solid var(--ac);
+  display: block;
+  font-size: 12px;
+  visibility: hidden;
+}
+.ic:hover .ict {
+  opacity: 1;
+  visibility: visible;
+  font-size: 14px;
+}
+.ic .ict:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 12.5px 0 12.5px;
+  border-color: var(--ac) transparent transparent transparent;
+  top: 100%;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.milspec {
+  filter: drop-shadow(0px 0px 4px #4b69ff);
+  color: #4b69ff;
+}
+.restricted {
+  filter: drop-shadow(0px 0px 4px #8847ff);
+  color: #8847ff;
+}
+.classified {
+  filter: drop-shadow(0px 0px 4px #d32ce6);
+  color: #d32ce6;
+}
+.covert {
+  filter: drop-shadow(0px 0px 4px #eb4b4b);
+  color: #eb4b4b;
+}
+.gold {
+  filter: drop-shadow(0px 0px 4px #dead00);
+  color: #dead00;
+}
+.stattrak {
+  color: #cf6a32;
+}
+.tip span {
+  filter: none;
 }
 
 ::-webkit-scrollbar {
