@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function(){
     currentcase = 0
     cases = [
       {
-        name: "CS:GO Weapon Case 1",
+        name: "CS:GO Weapon Case",
         icon: "weaponcase1.png",
         desc: "CS:GO's first case, this case was added in The Arms Deal update way back on the 14th of August, 2013.",
         milspec: [
@@ -213,37 +213,173 @@ document.addEventListener("DOMContentLoaded", function(){
           knives: ["Bayonet", "Flip Knife", "Gut Knife", "Karambit", "M9 Bayonet"],
           patterns: ["Fade","Vanilla","Slaughter","Crimson Web","Case Hardened","Blue Steel","Stained","Night","Safari Mesh","Boreal Forest","Scorched","Forest DDPAT","Urban Masked"]
         }
+      },
+      {
+        name: "CS:GO Weapon Case 2",
+        icon: "weaponcase1.png",
+        desc: "The second in a series of 3 Weapon Cases, Weapon Case 2 was added on the 8th of November, 2013",
+        milspec: [
+          {
+            name: "P250 Hive",
+            icon: "P250Hive",
+            minfloat: "0.00",
+            maxfloat: "0.30",
+            canbestattrak: true
+          },
+          {
+            name: "FAMAS Hexane",
+            icon: "FAMASHexane",
+            minfloat: "0.00",
+            maxfloat: "0.40",
+            canbestattrak: true
+          },
+          {
+            name: "Tec-9 Blue Titanium",
+            icon: "Tec9BlueTitanium",
+            minfloat: "0.00",
+            maxfloat: "0.04",
+            canbestattrak: true
+          },
+          {
+            name: "M4A1-S Blood Tiger",
+            icon: "M4A1SBloodTiger",
+            minfloat: "0.00",
+            maxfloat: "0.30",
+            canbestattrak: true
+          },
+          {
+            name: "SCAR-20 Crimson Web",
+            icon: "SCAR20CrimsonWeb",
+            minfloat: "0.06",
+            maxfloat: "0.80",
+            canbestattrak: true
+          }
+        ],
+        restricted: [
+          {
+            name: "Nova Graphite",
+            icon: "NovaGraphite",
+            minfloat: "0.00",
+            maxfloat: "0.12",
+            canbestattrak: true
+          },
+          {
+            name: "Dual Berettas Hemoglobin",
+            icon: "DualBerettasHemoglobin",
+            minfloat: "0.00",
+            maxfloat: "0.20",
+            canbestattrak: true
+          },
+          {
+            name: "MP9 Hypnotic",
+            icon: "MP9Hypnotic",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          },
+          {
+            name: "Five-SeveN Case Hardened",
+            icon: "FiveSeveNCaseHardened",
+            minfloat: "0.00",
+            maxfloat: "1.00",
+            canbestattrak: true
+          }
+        ],
+        classified: [
+          {
+            name: "USP-S Serum",
+            icon: "USPSSerum",
+            minfloat: "0.00",
+            maxfloat: "0.25",
+            canbestattrak: true
+          },
+          {
+            name: "P90 Cold Blooded",
+            icon: "P90ColdBlooded",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          }
+        ],
+        covert: [
+          {
+            name: "SSG 08 Blood in the Water",
+            icon: "SSG08BloodintheWater",
+            minfloat: "0.06",
+            maxfloat: "0.20",
+            canbestattrak: true
+          }
+        ],
+        gold: {
+          knives: ["Bayonet", "Flip Knife", "Gut Knife", "Karambit", "M9 Bayonet"],
+          patterns: ["Fade","Vanilla","Slaughter","Crimson Web","Case Hardened","Blue Steel","Stained","Night","Safari Mesh","Boreal Forest","Scorched","Forest DDPAT","Urban Masked"]
+        }
       }
     ]
-    var header = document.createElement("h1")
-    header.append(cases[currentcase].name)
-    var desc = document.createElement("p")
-    desc.appendChild(document.createTextNode(cases[currentcase].desc))
-    document.getElementById("content").append(header)
-    document.getElementById("content").append(desc)
-    for (var i = 0; i < Object.keys(cases[currentcase]).length; i++) {
-      Object.keys(cases[currentcase])[i]
-      if (Object.keys(cases[currentcase])[i] == "milspec" || Object.keys(cases[currentcase])[i] == "restricted" || Object.keys(cases[currentcase])[i] == "classified" || Object.keys(cases[currentcase])[i] == "covert") {
-        for (var d = 0; d < cases[currentcase][Object.keys(cases[currentcase])[i]].length; d++) {
-          cases[currentcase][Object.keys(cases[currentcase])[i]][d]
+    function loadacase(){
+      document.getElementById("casecontent").innerHTML = ''
+      var header = document.createElement("h1")
+      header.append(cases[currentcase].name)
+      var desc = document.createElement("p")
+      desc.appendChild(document.createTextNode(cases[currentcase].desc))
+      document.getElementById("casecontent").append(header)
+      document.getElementById("casecontent").append(desc)
+      for (var i = 0; i < Object.keys(cases[currentcase]).length; i++) {
+        Object.keys(cases[currentcase])[i]
+        if (Object.keys(cases[currentcase])[i] == "milspec" || Object.keys(cases[currentcase])[i] == "restricted" || Object.keys(cases[currentcase])[i] == "classified" || Object.keys(cases[currentcase])[i] == "covert") {
+          for (var d = 0; d < cases[currentcase][Object.keys(cases[currentcase])[i]].length; d++) {
+            cases[currentcase][Object.keys(cases[currentcase])[i]][d]
 
+            var itemicon = document.createElement("img")
+            itemicon.src = "weaponicons/"+cases[currentcase][Object.keys(cases[currentcase])[i]][d].icon+".png"
+            itemicon.className = "weaponicon "+Object.keys(cases[currentcase])[i]
+
+            var itemtooltip = document.createElement("span")
+            var itemst = document.createElement("span")
+            if (cases[currentcase][Object.keys(cases[currentcase])[i]][d].canbestattrak) {
+              itemst.className = 'stattrak'
+            }
+            itemst.appendChild(document.createTextNode(((cases[currentcase][Object.keys(cases[currentcase])[i]][d].canbestattrak) ? `Can Be StatTrak™` : `Cannot Be StatTrak™`)))
+            itemtooltip.className = 'ict'
+            itemtooltip.appendChild(itemst)
+            itemtooltip.appendChild(document.createElement("br"))
+            itemtooltip.appendChild(document.createTextNode("Float: "+cases[currentcase][Object.keys(cases[currentcase])[i]][d].minfloat+" - "+cases[currentcase][Object.keys(cases[currentcase])[i]][d].maxfloat))
+
+            var itemname = document.createElement("div")
+            itemname.appendChild(document.createTextNode(cases[currentcase][Object.keys(cases[currentcase])[i]][d].name))
+
+            var itemcontainer = document.createElement("div")
+            itemcontainer.className = "ic"
+            itemcontainer.appendChild(itemicon)
+            itemcontainer.appendChild(itemname)
+            itemcontainer.appendChild(itemtooltip)
+
+            document.getElementById("casecontent").append(itemcontainer)
+          }
+        }
+      }
+      for (var i = 0; i < cases[currentcase].gold.knives.length; i++) {
+        for (var x = 0; x < cases[currentcase].gold.patterns.length; x++) {
+          cases[currentcase].gold.knives[i]
+          cases[currentcase].gold.patterns[x]
+          var knifeicon = getknifeicon(cases[currentcase].gold.knives[i], cases[currentcase].gold.patterns[x])
+          var knifename = getknifename(cases[currentcase].gold.knives[i], cases[currentcase].gold.patterns[x])
+          var knifefloats = getpatternfloats(cases[currentcase].gold.patterns[x])
           var itemicon = document.createElement("img")
-          itemicon.src = "weaponicons/"+cases[currentcase][Object.keys(cases[currentcase])[i]][d].icon+".png"
-          itemicon.className = "weaponicon "+Object.keys(cases[currentcase])[i]
+          itemicon.src = "weaponicons/knives/"+knifeicon
+          itemicon.className = "weaponicon gold"
 
           var itemtooltip = document.createElement("span")
           var itemst = document.createElement("span")
-          if (cases[currentcase][Object.keys(cases[currentcase])[i]][d].canbestattrak) {
-            itemst.className = 'stattrak'
-          }
-          itemst.appendChild(document.createTextNode(((cases[currentcase][Object.keys(cases[currentcase])[i]][d].canbestattrak) ? `Can Be StatTrak™` : `Cannot Be StatTrak™`)))
+          itemst.className = 'stattrak'
+          itemst.appendChild(document.createTextNode(`Can Be StatTrak™`))
           itemtooltip.className = 'ict'
           itemtooltip.appendChild(itemst)
           itemtooltip.appendChild(document.createElement("br"))
-          itemtooltip.appendChild(document.createTextNode("Float: "+cases[currentcase][Object.keys(cases[currentcase])[i]][d].minfloat+" - "+cases[currentcase][Object.keys(cases[currentcase])[i]][d].maxfloat))
+          itemtooltip.appendChild(document.createTextNode("Float: "+knifefloats[0]+" - "+knifefloats[1]))
 
           var itemname = document.createElement("div")
-          itemname.appendChild(document.createTextNode(cases[currentcase][Object.keys(cases[currentcase])[i]][d].name))
+          itemname.appendChild(document.createTextNode(knifename))
 
           var itemcontainer = document.createElement("div")
           itemcontainer.className = "ic"
@@ -251,41 +387,12 @@ document.addEventListener("DOMContentLoaded", function(){
           itemcontainer.appendChild(itemname)
           itemcontainer.appendChild(itemtooltip)
 
-          document.getElementById("content").append(itemcontainer)
+          document.getElementById("casecontent").append(itemcontainer)
         }
       }
     }
-    for (var i = 0; i < cases[currentcase].gold.knives.length; i++) {
-      for (var x = 0; x < cases[currentcase].gold.patterns.length; x++) {
-        cases[currentcase].gold.knives[i]
-        cases[currentcase].gold.patterns[x]
-        var knifeicon = getknifeicon(cases[currentcase].gold.knives[i], cases[currentcase].gold.patterns[x])
-        var knifename = getknifename(cases[currentcase].gold.knives[i], cases[currentcase].gold.patterns[x])
-        var knifefloats = getpatternfloats(cases[currentcase].gold.patterns[x])
-        var itemicon = document.createElement("img")
-        itemicon.src = "weaponicons/knives/"+knifeicon
-        itemicon.className = "weaponicon gold"
-
-        var itemtooltip = document.createElement("span")
-        var itemst = document.createElement("span")
-        itemst.className = 'stattrak'
-        itemst.appendChild(document.createTextNode(`Can Be StatTrak™`))
-        itemtooltip.className = 'ict'
-        itemtooltip.appendChild(itemst)
-        itemtooltip.appendChild(document.createElement("br"))
-        itemtooltip.appendChild(document.createTextNode("Float: "+knifefloats[0]+" - "+knifefloats[1]))
-
-        var itemname = document.createElement("div")
-        itemname.appendChild(document.createTextNode(knifename))
-
-        var itemcontainer = document.createElement("div")
-        itemcontainer.className = "ic"
-        itemcontainer.appendChild(itemicon)
-        itemcontainer.appendChild(itemname)
-        itemcontainer.appendChild(itemtooltip)
-
-        document.getElementById("content").append(itemcontainer)
-      }
-    }
+    loadacase()
+    document.getElementById('loadcase1').addEventListener('click', function(){currentcase = 0; loadacase()})
+    document.getElementById('loadcase2').addEventListener('click', function(){currentcase = 1; loadacase()})
   }
 });
