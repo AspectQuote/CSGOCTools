@@ -30,14 +30,24 @@ document.addEventListener("DOMContentLoaded", function(){
         case "Huntsman Knife":
           strret += 'Huntsman/'
           break;
-        case "-":
-          strret += '-/'
+        case "Butterfly Knife":
+          strret += 'ButterflyKnife/'
           break;
         case "-":
           strret += '-/'
           break;
+        case "Bowie Knife":
+          strret += 'BowieKnife/'
+          break;
+        case "Falchion Knife":
+          strret += 'FalchionKnife/'
+          break;
+        case "Shadow Daggers":
+          strret += 'ShadowDaggers/'
+          break;
+
         default:
-          strret += `Bayonet`
+          strret += `Bayonet/`
       }
       switch (pattern) {
         case "Fade":
@@ -78,6 +88,24 @@ document.addEventListener("DOMContentLoaded", function(){
           break;
         case "Urban Masked":
           strret += "UrbanMasked.png"
+          break;
+        case "Ultraviolet":
+          strret += "Ultraviolet.png"
+          break;
+        case "Rust Coat":
+          strret += "RustCoat.png"
+          break;
+        case "Damascus Steel":
+          strret += "DamascusSteel.png"
+          break;
+        case "Tiger Tooth":
+          strret += "TigerTooth.png"
+          break;
+        case "Doppler":
+          strret += "Doppler.png"
+          break;
+        case "Marble Fade":
+          strret += "MarbleFade.png"
           break;
         default:
           strret += "Vanilla.png"
@@ -990,6 +1018,285 @@ document.addEventListener("DOMContentLoaded", function(){
           knives: ["Huntsman Knife"],
           patterns: ["Fade","Vanilla","Slaughter","Crimson Web","Case Hardened","Blue Steel","Stained","Night","Safari Mesh","Boreal Forest","Scorched","Forest DDPAT","Urban Masked"]
         }
+      },
+      {
+        name: "Operation Breakout Weapon Case",
+        type: "knife",
+        icon: "weaponcase1.png",
+        desc: "This case was released on the 1st of July, 2014.",
+        milspec: [
+          {
+            name: "Negev | Desert-Strike",
+            icon: "NegevDesertStrike",
+            canbestattrak: true
+          },
+          {
+            name: "UMP-45 | Labyrinth",
+            icon: "UMP45Labyrinth",
+            canbestattrak: true
+          },
+          {
+            name: "MP7 | Urban Hazard",
+            icon: "MP7UrbanHazard",
+            canbestattrak: true
+          },
+          {
+            name: "P2000 | Ivory",
+            icon: "P2000Ivory",
+            canbestattrak: true
+          },
+          {
+            name: "SSG 08 | Abyss",
+            icon: "SSG08Abyss",
+            canbestattrak: true
+          }
+        ],
+        restricted: [
+          {
+            name: "PP-Bizon | Osiris",
+            icon: "PPBizonOsiris",
+            canbestattrak: true
+          },
+          {
+            name: "CZ75-Auto | Tigris",
+            icon: "CZ75AutoTigris",
+            canbestattrak: true
+          },
+          {
+            name: "Nova | Koi",
+            icon: "NovaKoi",
+            canbestattrak: true
+          },
+          {
+            name: "P250 | Supernova",
+            icon: "P250Supernova",
+            canbestattrak: true
+          }
+        ],
+        classified: [
+          {
+            name: "Five-SeveN | Fowl Play",
+            icon: "FiveSeveNFowlPlay",
+            canbestattrak: true
+          },
+          {
+            name: "Desert Eagle | Conspiracy",
+            icon: "DesertEagleConspiracy",
+            canbestattrak: true
+          },
+          {
+            name: "Glock-18 | Water Elemental",
+            icon: "Glock18WaterElemental",
+            canbestattrak: true
+          }
+        ],
+        covert: [
+          {
+            name: "M4A1-S | Cyrex",
+            icon: "M4A1SCyrex",
+            canbestattrak: true
+          },
+          {
+            name: "P90 | Asiimov",
+            icon: "P90Asiimov",
+            canbestattrak: true
+          }
+        ],
+        gold: {
+          knives: ["Butterfly Knife"],
+          patterns: ["Fade","Vanilla","Slaughter","Crimson Web","Case Hardened","Blue Steel","Stained","Night","Safari Mesh","Boreal Forest","Scorched","Forest DDPAT","Urban Masked"]
+        }
+      },
+      {
+        name: "Operation Vanguard Weapon Case",
+        type: "knife",
+        icon: "weaponcase1.png",
+        desc: "This case was released on the 11th of November, 2014.",
+        milspec: [
+          {
+            name: "G3SG1 | Murky",
+            icon: "G3SG1Murky",
+            canbestattrak: true
+          },
+          {
+            name: "UMP-45 | Delusion",
+            icon: "UMP45Delusion",
+            canbestattrak: true
+          },
+          {
+            name: "MP9 | Dart",
+            icon: "MP9Dart",
+            canbestattrak: true
+          },
+          {
+            name: "Five-SeveN | Urban Hazard",
+            icon: "FiveSeveNUrbanHazard",
+            canbestattrak: true
+          },
+          {
+            name: "MAG-7 | Firestarter",
+            icon: "MAG7Firestarter",
+            canbestattrak: true
+          }
+        ],
+        restricted: [
+          {
+            name: "Sawed-Off | Highwayman",
+            icon: "SawedOffHighwayman",
+            canbestattrak: true
+          },
+          {
+            name: "Glock-18 | Grinder",
+            icon: "Glock18Grinder",
+            canbestattrak: true
+          },
+          {
+            name: "M4A1-S | Basilisk",
+            icon: "M4A1SBasilisk",
+            canbestattrak: true
+          },
+          {
+            name: "M4A4 | Griffin",
+            icon: "M4A4Griffin",
+            canbestattrak: true
+          }
+        ],
+        classified: [
+          {
+            name: "P250 | Cartel",
+            icon: "P250Cartel",
+            canbestattrak: true
+          },
+          {
+            name: "SCAR-20 | Cardiac",
+            icon: "SCAR20Cardiac",
+            canbestattrak: true
+          },
+          {
+            name: "XM1014 | Tranquility",
+            icon: "XM1014Tranquility",
+            canbestattrak: true
+          }
+        ],
+        covert: [
+          {
+            name: "P2000 | Fire Elemental",
+            icon: "P2000FireElemental",
+            canbestattrak: true
+          },
+          {
+            name: "AK-47 | Wasteland Rebel",
+            icon: "AK47WastelandRebel",
+            canbestattrak: true
+          }
+        ],
+        gold: {
+          knives: ["Bayonet", "Flip Knife", "Gut Knife", "Karambit", "M9 Bayonet"],
+          patterns: ["Fade","Vanilla","Slaughter","Crimson Web","Case Hardened","Blue Steel","Stained","Night","Safari Mesh","Boreal Forest","Scorched","Forest DDPAT","Urban Masked"]
+        }
+      },
+      {
+        name: "Spectrum Case",
+        type: "knife",
+        icon: "weaponcase1.png",
+        desc: "This case was released on the 16th of March, 2017.",
+        milspec: [
+          {
+            name: "PP-Bizon | Jungle Slipstream",
+            icon: "PPBizonJungleSlipstream",
+            canbestattrak: true
+          },
+          {
+            name: "MP7 | Akoben",
+            icon: "MP7Akoben",
+            canbestattrak: true
+          },
+          {
+            name: "Sawed-Off | Zander",
+            icon: "SawedOffZander",
+            canbestattrak: true
+          },
+          {
+            name: "SCAR-20 | Blueprint",
+            icon: "SCAR20Blueprint",
+            canbestattrak: true
+          },
+          {
+            name: "P250 | Ripple",
+            icon: "P250Ripple",
+            canbestattrak: true
+          },
+          {
+            name: "Five-SeveN | Capillary",
+            icon: "FiveSeveNCapillary",
+            canbestattrak: true
+          },
+          {
+            name: "Desert Eagle | Oxide Blaze",
+            icon: "DesertEagleOxideBlaze",
+            canbestattrak: true
+          }
+        ],
+        restricted: [
+          {
+            name: "MAC-10 | Last Dive",
+            icon: "MAC10LastDive",
+            canbestattrak: true
+          },
+          {
+            name: "Galil AR | Crimson Tsunami",
+            icon: "GalilARCrimsonTsunami",
+            canbestattrak: true
+          },
+          {
+            name: "M249 | Emerald Poison Dart",
+            icon: "M249EmeraldPoisonDart",
+            canbestattrak: true
+          },
+          {
+            name: "UMP-45 | Scaffold",
+            icon: "UMP45Scaffold",
+            canbestattrak: true
+          },
+          {
+            name: "XM1014 | Seasons",
+            icon: "XM1014Seasons",
+            canbestattrak: true
+          }
+        ],
+        classified: [
+          {
+            name: "CZ75-Auto | Xiangliu",
+            icon: "CZ75AutoXiangliu",
+            canbestattrak: true
+          },
+          {
+            name: "AWP | Fever Dream",
+            icon: "AWPFeverDream",
+            canbestattrak: true
+          },
+          {
+            name: "M4A1-S | Decimator",
+            icon: "M4A1SDecimator",
+            canbestattrak: true
+          }
+        ],
+        covert: [
+          {
+            name: "USP-S | Neo-Noir",
+            icon: "USPSNeoNoir",
+            canbestattrak: true
+          },
+          {
+            name: "AK-47 | Bloodsport",
+            icon: "AK47Bloodsport",
+            canbestattrak: true
+          }
+        ],
+        gold: {
+          knives: ["Bowie Knife", "Falchion Knife", "Butterfly Knife", "Huntsman Knife", "Shadow Daggers"],
+          patterns: ["Ultraviolet","Rust Coat","Damascus Steel","Tiger Tooth","Doppler","Marble Fade"]
+        }
       }
     ]
     function loadacase(){
@@ -1186,5 +1493,8 @@ document.addEventListener("DOMContentLoaded", function(){
     document.getElementById('loadcase8').addEventListener('click', function(){currentcase = 7; loadacase()})
     document.getElementById('loadcase9').addEventListener('click', function(){currentcase = 8; loadacase()})
     document.getElementById('loadcase10').addEventListener('click', function(){currentcase = 9; loadacase()})
+    document.getElementById('loadcase11').addEventListener('click', function(){currentcase = 10; loadacase()})
+    document.getElementById('loadcase12').addEventListener('click', function(){currentcase = 11; loadacase()})
+    document.getElementById('loadcase13').addEventListener('click', function(){currentcase = 12; loadacase()})
   }
 });
