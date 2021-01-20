@@ -1,6 +1,6 @@
 casespage = false
 document.addEventListener("DOMContentLoaded", function(){
-  dayssincecf = Math.floor(Math.abs((1582959600000-Date.now())/(24 * 60 * 60 * 1000)))
+  var dayssincecf = Math.floor(Math.abs((1582959600000-Date.now())/(24 * 60 * 60 * 1000)))
   document.getElementById("leftnavbarbottomflavor").innerHTML=`
     Built from scratch with ♥ by Aspect. <a href="https://csgoclicker.net" target="_blank">CSGOClicker</a> created by Banned and Roflzilla.
     <br/>
@@ -160,8 +160,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
       }
     }
-    currentcase = 0
-    cases = [
+    var currentcase = 0
+    var cases = [
       {
         name: "CS:GO Weapon Case",
         type: "knife",
@@ -1297,6 +1297,572 @@ document.addEventListener("DOMContentLoaded", function(){
           knives: ["Bowie Knife", "Falchion Knife", "Butterfly Knife", "Huntsman Knife", "Shadow Daggers"],
           patterns: ["Ultraviolet","Rust Coat","Damascus Steel","Tiger Tooth","Doppler","Marble Fade"]
         }
+      },
+      {
+        name: "Spectrum 2 Case",
+        type: "knife",
+        icon: "weaponcase1.png",
+        desc: "This case was released on the 14th of September, 2017.",
+        milspec: [
+          {
+            name: "SCAR-20 | Jungle Slipstream",
+            icon: "SCAR20JungleSlipstream",
+            canbestattrak: true
+          },
+          {
+            name: "G3SG1 | Hunter",
+            icon: "G3SG1Hunter",
+            canbestattrak: true
+          },
+          {
+            name: "Sawed-Off | Morris",
+            icon: "SawedOffMorris",
+            canbestattrak: true
+          },
+          {
+            name: "MAC-10 | Oceanic",
+            icon: "MAC10Oceanic",
+            canbestattrak: true
+          },
+          {
+            name: "Tec-9 | Cracked Opal",
+            icon: "Tec9CrackedOpal",
+            canbestattrak: true
+          },
+          {
+            name: "AUG | Triqua",
+            icon: "AUGTriqua",
+            canbestattrak: true
+          },
+          {
+            name: "Glock-18 | Off World",
+            icon: "Glock18OffWorld",
+            canbestattrak: true
+          }
+        ],
+        restricted: [
+          {
+            name: "XM1014 | Ziggy",
+            icon: "XM1014Ziggy",
+            canbestattrak: true
+          },
+          {
+            name: "UMP-45 | Exposure",
+            icon: "UMP45Exposure",
+            canbestattrak: true
+          },
+          {
+            name: "SG 553 | Phantom",
+            icon: "SG553Phantom",
+            canbestattrak: true
+          },
+          {
+            name: "CZ75-Auto | Tacticat",
+            icon: "CZ75AutoTacticat",
+            canbestattrak: true
+          },
+          {
+            name: "MP9 | Goo",
+            icon: "MP9Goo",
+            canbestattrak: true
+          }
+        ],
+        classified: [
+          {
+            name: "R8 Revolver | Llama Cannon",
+            icon: "R8RevolverLlamaCannon",
+            canbestattrak: true
+          },
+          {
+            name: "PP-Bizon | High Roller",
+            icon: "PPBizonHighRoller",
+            canbestattrak: true
+          },
+          {
+            name: "M4A1-S | Leaded Glass",
+            icon: "M4A1SLeadedGlass",
+            canbestattrak: true
+          }
+        ],
+        covert: [
+          {
+            name: "P250 | See Ya Later",
+            icon: "P250SeeYaLater",
+            canbestattrak: true
+          },
+          {
+            name: "AK-47 | The Empress",
+            icon: "AK47TheEmpress",
+            canbestattrak: true
+          }
+        ],
+        gold: {
+          knives: ["Bowie Knife", "Falchion Knife", "Butterfly Knife", "Huntsman Knife", "Shadow Daggers"],
+          patterns: ["Ultraviolet","Rust Coat","Damascus Steel","Tiger Tooth","Doppler","Marble Fade"]
+        }
+      },
+      {
+        name: "Falchion Case",
+        type: "knife",
+        icon: "weaponcase1.png",
+        desc: "This case was released on the 26th of May, 2015.",
+        milspec: [
+          {
+            name: "UMP-45 | Riot",
+            icon: "UMP45Riot",
+            canbestattrak: true
+          },
+          {
+            name: "Nova | Ranger",
+            icon: "NovaRanger",
+            canbestattrak: true
+          },
+          {
+            name: "Glock-18 | Bunsen Burner",
+            icon: "Glock18BunsenBurner",
+            canbestattrak: true
+          },
+          {
+            name: "P90 | Elite Build",
+            icon: "P90EliteBuild",
+            canbestattrak: true
+          },
+          {
+            name: "USP-S | Torque",
+            icon: "USPSTorque",
+            canbestattrak: true
+          },
+          {
+            name: "Galil AR | Rocket Pop",
+            icon: "GalilARRocketPop",
+            canbestattrak: true
+          }
+        ],
+        restricted: [
+          {
+            name: "FAMAS | Neural Net",
+            icon: "FAMASNeuralNet",
+            canbestattrak: true
+          },
+          {
+            name: "P2000 | Handgun",
+            icon: "P2000Handgun",
+            canbestattrak: true
+          },
+          {
+            name: "MP9 | Ruby Poison Dart",
+            icon: "MP9RubyPoisonDart",
+            canbestattrak: true
+          },
+          {
+            name: "Negev | Loudmouth",
+            icon: "NegevLoudmouth",
+            canbestattrak: true
+          },
+          {
+            name: "M4A4 | Evil Daimyo",
+            icon: "M4A4EvilDaimyo",
+            canbestattrak: true
+          }
+        ],
+        classified: [
+          {
+            name: "CZ75-Auto | Yellow Jacket",
+            icon: "CZ75AutoYellowJacket",
+            canbestattrak: true
+          },
+          {
+            name: "MP7 | Nemesis",
+            icon: "MP7Nemesis",
+            canbestattrak: true
+          },
+          {
+            name: "SG 553 | Cyrex",
+            icon: "SG553Cyrex",
+            canbestattrak: true
+          }
+        ],
+        covert: [
+          {
+            name: "AK-47 | Aquamarine Revenge",
+            icon: "AK47AquamarineRevenge",
+            canbestattrak: true
+          },
+          {
+            name: "AWP | Hyper Beast",
+            icon: "AWPHyperBeast",
+            canbestattrak: true
+          }
+        ],
+        gold: {
+          knives: ["Falchion Knife"],
+          patterns: ["Fade","Vanilla","Slaughter","Crimson Web","Case Hardened","Blue Steel","Stained","Night","Safari Mesh","Boreal Forest","Scorched","Forest DDPAT","Urban Masked"]
+        }
+      },
+      {
+        name: "Shadow Case",
+        type: "knife",
+        icon: "weaponcase1.png",
+        desc: "This case was released on the 17th of September, 2015.",
+        milspec: [
+          {
+            name: "XM1014 | Scumbria",
+            icon: "XM1014Scumbria",
+            canbestattrak: true
+          },
+          {
+            name: "MAG-7 | Cobalt Core",
+            icon: "MAG7CobaltCore",
+            canbestattrak: true
+          },
+          {
+            name: "MAC-10 | Rangeen",
+            icon: "MAC10Rangeen",
+            canbestattrak: true
+          },
+          {
+            name: "SCAR-20 | Green Marine",
+            icon: "SCAR20GreenMarine",
+            canbestattrak: true
+          },
+          {
+            name: "FAMAS | Survivor Z",
+            icon: "FAMASSurvivorZ",
+            canbestattrak: true
+          },
+          {
+            name: "Glock-18 | Wraiths",
+            icon: "Glock18Wraiths",
+            canbestattrak: true
+          },
+          {
+            name: "Dual Berettas | Dualing Dragons",
+            icon: "DualBerettasDualingDragons",
+            canbestattrak: true
+          }
+        ],
+        restricted: [
+          {
+            name: "MP7 | Special Delivery",
+            icon: "MP7SpecialDelivery",
+            canbestattrak: true
+          },
+          {
+            name: "M249 | Nebula Crusader",
+            icon: "M249NebulaCrusader",
+            canbestattrak: true
+          },
+          {
+            name: "P250 | Wingshot",
+            icon: "P250Wingshot",
+            canbestattrak: true
+          },
+          {
+            name: "Galil AR | Stone Cold",
+            icon: "GalilARStoneCold",
+            canbestattrak: true
+          }
+        ],
+        classified: [
+          {
+            name: "G3SG1 | Flux",
+            icon: "G3SG1Flux",
+            canbestattrak: true
+          },
+          {
+            name: "SSG 08 | Big Iron",
+            icon: "SSG08BigIron",
+            canbestattrak: true
+          },
+          {
+            name: "AK-47 | Frontside Misty",
+            icon: "AK47FrontsideMisty",
+            canbestattrak: true
+          }
+        ],
+        covert: [
+          {
+            name: "M4A1-S | Golden Coil",
+            icon: "M4A1SGoldenCoil",
+            canbestattrak: true
+          },
+          {
+            name: "USP-S | Kill Confirmed",
+            icon: "USPSKillConfirmed",
+            canbestattrak: true
+          }
+        ],
+        gold: {
+          knives: ["Shadow Daggers"],
+          patterns: ["Fade","Vanilla","Slaughter","Crimson Web","Case Hardened","Blue Steel","Stained","Night","Safari Mesh","Boreal Forest","Scorched","Forest DDPAT","Urban Masked"]
+        }
+      },
+      {
+        name: "Revolver Case",
+        type: "knife",
+        icon: "weaponcase1.png",
+        desc: "This case was added on the 8th of December, 2015.",
+        milspec: [
+          {
+            name: "SCAR-20 | Outbreak",
+            icon: "SCAR20Outbreak",
+            minfloat: "0.00",
+            maxfloat: "0.14",
+            canbestattrak: true
+          },
+          {
+            name: "Sawed-Off | Yorick",
+            icon: "SawedOffYorick",
+            minfloat: "0.06",
+            maxfloat: "0.80",
+            canbestattrak: true
+          },
+          {
+            name: "P2000 | Imperial",
+            icon: "P2000Imperial",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "Desert Eagle | Corinthian",
+            icon: "DesertEagleCorinthian",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "R8 Revolver | Crimson Web",
+            icon: "R8RevolverCrimsonWeb",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "AUG | Ricochet",
+            icon: "AUGRicochet",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          }
+        ],
+        restricted: [
+          {
+            name: "XM1014 | Teclu Burner",
+            icon: "XM1014TecluBurner",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          },
+          {
+            name: "PP-Bizon | Fuel Rod",
+            icon: "PPBizonFuelRod",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "Five-SeveN | Retrobution",
+            icon: "FiveSeveNRetrobution",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "Tec-9 | Avalanche",
+            icon: "Tec9Avalanche",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "SG 553 | Tiger Moth",
+            icon: "SG553TigerMoth",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "Negev | Power Loader",
+            icon: "NegevPowerLoader",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          }
+        ],
+        classified: [
+          {
+            name: "P90 | Shapewood",
+            icon: "P90Shapewood",
+            minfloat: "0.00",
+            maxfloat: "1.00",
+            canbestattrak: true
+          },
+          {
+            name: "G3SG1 | The Executioner",
+            icon: "G3SG1TheExecutioner",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          },
+          {
+            name: "AK-47 | Point Disarray",
+            icon: "AK47PointDisarray",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          }
+        ],
+        covert: [
+          {
+            name: "R8 Revolver | Fade",
+            icon: "R8RevolverFade",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          },
+          {
+            name: "M4A4 | Royal Paladin",
+            icon: "M4A4RoyalPaladin",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          }
+        ],
+        gold: {
+          knives: ["Bayonet", "Flip Knife", "Gut Knife", "Karambit", "M9 Bayonet"],
+          patterns: ["Fade","Vanilla","Slaughter","Crimson Web","Case Hardened","Blue Steel","Stained","Night","Safari Mesh","Boreal Forest","Scorched","Forest DDPAT","Urban Masked"]
+        }
+      },
+      {
+        name: "Operation Wildfire Case",
+        type: "knife",
+        icon: "weaponcase1.png",
+        desc: "This case was added on the 8th of December, 2015.",
+        milspec: [
+          {
+            name: "Tec-9 | Jambiya",
+            icon: "Tec9Jambiya",
+            minfloat: "0.00",
+            maxfloat: "0.14",
+            canbestattrak: true
+          },
+          {
+            name: "MAC-10 | Lapis Gator",
+            icon: "MAC10LapisGator",
+            minfloat: "0.06",
+            maxfloat: "0.80",
+            canbestattrak: true
+          },
+          {
+            name: "Dual Berettas | Cartel",
+            icon: "DualBerettasCartel",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "PP-Bizon | Photic Zone",
+            icon: "PPBizonPhoticZone",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "SSG 08 | Necropos",
+            icon: "SSG08Necropos",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "USP-S | Lead Conduit",
+            icon: "USPSLeadConduit",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          }
+        ],
+        restricted: [
+          {
+            name: "Five-SeveN | Triumvirate",
+            icon: "FiveSeveNTriumvirate",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          },
+          {
+            name: "MP7 | Impire",
+            icon: "MP7Impire",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "MAG-7 | Praetorian",
+            icon: "MAG7Praetorian",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "FAMAS | Valence",
+            icon: "FAMASValence",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "Glock-18 | Royal Legion",
+            icon: "Glock18RoyalLegion",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          }
+        ],
+        classified: [
+          {
+            name: "Nova | Hyper Beast",
+            icon: "NovaHyperBeast",
+            minfloat: "0.00",
+            maxfloat: "1.00",
+            canbestattrak: true
+          },
+          {
+            name: "AWP | Elite Build",
+            icon: "AWPEliteBuild",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          },
+          {
+            name: "Desert Eagle | Kumicho Dragon",
+            icon: "DesertEagleKumichoDragon",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          }
+        ],
+        covert: [
+          {
+            name: "M4A4 | The Battlestar",
+            icon: "M4A4TheBattlestar",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          },
+          {
+            name: "AK-47 | Fuel Injector",
+            icon: "AK47FuelInjector",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          }
+        ],
+        gold: {
+          knives: ["Bowie Knife"],
+          patterns: ["Fade","Vanilla","Slaughter","Crimson Web","Case Hardened","Blue Steel","Stained","Night","Safari Mesh","Boreal Forest","Scorched","Forest DDPAT","Urban Masked"]
+        }
       }
     ]
     function loadacase(){
@@ -1496,5 +2062,18 @@ document.addEventListener("DOMContentLoaded", function(){
     document.getElementById('loadcase11').addEventListener('click', function(){currentcase = 10; loadacase()})
     document.getElementById('loadcase12').addEventListener('click', function(){currentcase = 11; loadacase()})
     document.getElementById('loadcase13').addEventListener('click', function(){currentcase = 12; loadacase()})
+    document.getElementById('loadcase14').addEventListener('click', function(){currentcase = 13; loadacase()})
+    document.getElementById('loadcase15').addEventListener('click', function(){currentcase = 14; loadacase()})
+    document.getElementById('loadcase16').addEventListener('click', function(){currentcase = 15; loadacase()})
+    document.getElementById('loadcase17').addEventListener('click', function(){currentcase = 16; loadacase()})
+    document.getElementById('loadcase18').addEventListener('click', function(){currentcase = 17; loadacase()})
+    document.getElementById('loadcase19').addEventListener('click', function(){currentcase = 18; loadacase()})
+    document.getElementById('loadcase20').addEventListener('click', function(){currentcase = 19; loadacase()})
+    document.getElementById('loadcase21').addEventListener('click', function(){currentcase = 20; loadacase()})
+    document.getElementById('loadcase22').addEventListener('click', function(){currentcase = 21; loadacase()})
+    document.getElementById('loadcase23').addEventListener('click', function(){currentcase = 22; loadacase()})
+    document.getElementById('loadcase24').addEventListener('click', function(){currentcase = 23; loadacase()})
+    document.getElementById('loadcase25').addEventListener('click', function(){currentcase = 24; loadacase()})
+    document.getElementById('loadcase26').addEventListener('click', function(){currentcase = 25; loadacase()})
   }
 });

@@ -1,4 +1,4 @@
-window.pricelist = {
+window.pricelist = { //CSGOClicker's Pricelist, taken directly from csgoclicker.net via the window.priceList variable
   "★ Bayonet": 260.75,
   "★ Bayonet | Autotronic (Battle-Scarred)": 280.1,
   "★ Bayonet | Autotronic (Factory New)": 454.94,
