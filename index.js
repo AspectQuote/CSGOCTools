@@ -1456,7 +1456,7 @@ document.addEventListener("DOMContentLoaded", function(){
           },
           {
             name: "Negev | Loudmouth",
-            icon: "NegevLoudmouth",
+            icon: "NegevLoudMouth",
             canbestattrak: true
           },
           {
@@ -1863,6 +1863,520 @@ document.addEventListener("DOMContentLoaded", function(){
           knives: ["Bowie Knife"],
           patterns: ["Fade","Vanilla","Slaughter","Crimson Web","Case Hardened","Blue Steel","Stained","Night","Safari Mesh","Boreal Forest","Scorched","Forest DDPAT","Urban Masked"]
         }
+      },
+      {
+        name: "Chroma Case",
+        type: "knife",
+        icon: "weaponcase1.png",
+        desc: "This case was added on the 8th of January, 2015.",
+        milspec: [
+          {
+            name: "XM1014 | Quicksilver",
+            icon: "XM1014Quicksilver",
+            minfloat: "0.00",
+            maxfloat: "0.14",
+            canbestattrak: true
+          },
+          {
+            name: "SCAR-20 | Grotto",
+            icon: "SCAR20Grotto",
+            minfloat: "0.06",
+            maxfloat: "0.80",
+            canbestattrak: true
+          },
+          {
+            name: "M249 | System Lock",
+            icon: "M249SystemLock",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "Glock-18 | Catacombs",
+            icon: "Glock18Catacombs",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "MP9 | Deadly Poison",
+            icon: "MP9DeadlyPoison",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          }
+        ],
+        restricted: [
+          {
+            name: "Sawed-Off | Serenity",
+            icon: "SawedOffSerenity",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          },
+          {
+            name: "Dual Berettas | Urban Shock",
+            icon: "DualBerettasUrbanShock",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "MAC-10 | Malachite",
+            icon: "MAC10Malachite",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "Desert Eagle | Naga",
+            icon: "DesertEagleNaga",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          }
+        ],
+        classified: [
+          {
+            name: "P250 | Muertos",
+            icon: "P250Muertos",
+            minfloat: "0.00",
+            maxfloat: "1.00",
+            canbestattrak: true
+          },
+          {
+            name: "AK-47 | Cartel",
+            icon: "AK47Cartel",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          },
+          {
+            name: "M4A4 | 龍王 (Dragon King)",
+            icon: "M4A4DragonKing",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          }
+        ],
+        covert: [
+          {
+            name: "AWP | Man-o'-war",
+            icon: "AWPManoWar",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          },
+          {
+            name: "Galil AR | Chatterbox",
+            icon: "GalilARChatterbox",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          }
+        ],
+        gold: {
+          knives: ["Bayonet","Flip Knife","Gut Knife","Karambit","M9 Bayonet"],
+          patterns: ["Marble Fade", "Tiger Tooth", "Doppler", "Damascus Steel", "Rust Coat", "Ultraviolet"]
+        }
+      },
+      {
+        name: "Chroma 2 Case",
+        type: "knife",
+        icon: "weaponcase1.png",
+        desc: "This case was added on the 15th of April, 2015.",
+        milspec: [
+          {
+            name: "MP7 | Armor Core",
+            icon: "MP7ArmorCore",
+            minfloat: "0.00",
+            maxfloat: "0.14",
+            canbestattrak: true
+          },
+          {
+            name: "Negev | Man-o'-war",
+            icon: "NegevManowar",
+            minfloat: "0.06",
+            maxfloat: "0.80",
+            canbestattrak: true
+          },
+          {
+            name: "Sawed-Off | Origami",
+            icon: "SawedOffOrigami",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "P250 | Valence",
+            icon: "P250Valence",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "Desert Eagle | Bronze Deco",
+            icon: "DesertEagleBronzeDeco",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "AK-47 | Elite Build",
+            icon: "AK47EliteBuild",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          }
+        ],
+        restricted: [
+          {
+            name: "UMP-45 | Grand Prix",
+            icon: "UMP45GrandPrix",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          },
+          {
+            name: "CZ75-Auto | Pole Position",
+            icon: "CZ75AutoPolePosition",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "MAG-7 | Heat",
+            icon: "MAG7Heat",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "AWP | Worm God",
+            icon: "AWPWormGod",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          }
+        ],
+        classified: [
+          {
+            name: "FAMAS | Djinn",
+            icon: "FAMASDjinn",
+            minfloat: "0.00",
+            maxfloat: "1.00",
+            canbestattrak: true
+          },
+          {
+            name: "Five-SeveN | Monkey Business",
+            icon: "FiveSeveNMonkeyBusiness",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          },
+          {
+            name: "Galil AR | Eco",
+            icon: "GalilAREco",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          }
+        ],
+        covert: [
+          {
+            name: "MAC-10 | Neon Rider",
+            icon: "MAC10NeonRider",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          },
+          {
+            name: "M4A1-S | Hyper Beast",
+            icon: "M4A1SHyperBeast",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          }
+        ],
+        gold: {
+          knives: ["Bayonet","Flip Knife","Gut Knife","Karambit","M9 Bayonet"],
+          patterns: ["Marble Fade", "Tiger Tooth", "Doppler", "Damascus Steel", "Rust Coat", "Ultraviolet"]
+        }
+      },
+      {
+        name: "Chroma 3 Case",
+        type: "knife",
+        icon: "weaponcase1.png",
+        desc: "This case was added on the 28th of April, 2016.",
+        milspec: [
+          {
+            name: "Sawed-Off | Fubar",
+            icon: "SawedOffFubar",
+            minfloat: "0.00",
+            maxfloat: "0.14",
+            canbestattrak: true
+          },
+          {
+            name: "G3SG1 | Orange Crash",
+            icon: "G3SG1OrangeCrash",
+            minfloat: "0.06",
+            maxfloat: "0.80",
+            canbestattrak: true
+          },
+          {
+            name: "P2000 | Oceanic",
+            icon: "P2000Oceanic",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "M249 | Spectre",
+            icon: "M249Spectre",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "Dual Berettas | Ventilators",
+            icon: "DualBerettasVentilators",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "SG 553 | Atlas",
+            icon: "SG553Atlas",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "MP9 | Bioleak",
+            icon: "MP9Bioleak",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          }
+        ],
+        restricted: [
+          {
+            name: "CZ75-Auto | Red Astor",
+            icon: "CZ75AutoRedAstor",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          },
+          {
+            name: "Tec-9 | Re-Entry",
+            icon: "Tec9ReEntry",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "Galil AR | Firefight",
+            icon: "GalilARFirefight",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "XM1014 | Black Tie",
+            icon: "XM1014BlackTie",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "SSG 08 | Ghost Crusader",
+            icon: "SSG08GhostCrusader",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          }
+        ],
+        classified: [
+          {
+            name: "UMP-45 | Primal Saber",
+            icon: "UMP45PrimalSaber",
+            minfloat: "0.00",
+            maxfloat: "1.00",
+            canbestattrak: true
+          },
+          {
+            name: "AUG | Fleet Flock",
+            icon: "AUGFleetFlock",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          },
+          {
+            name: "P250 | Asiimov",
+            icon: "P250Asiimov",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          }
+        ],
+        covert: [
+          {
+            name: "PP-Bizon | Judgement of Anubis",
+            icon: "PPBizonJudgementofAnubis",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          },
+          {
+            name: "M4A1-S | Chantico's Fire",
+            icon: "M4A1SChanticosFire",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          }
+        ],
+        gold: {
+          knives: ["Bayonet","Flip Knife","Gut Knife","Karambit","M9 Bayonet"],
+          patterns: ["Marble Fade", "Tiger Tooth", "Doppler", "Damascus Steel", "Rust Coat", "Ultraviolet"]
+        }
+      },
+      {
+        name: "Glove Case",
+        type: "glove",
+        icon: "weaponcase1.png",
+        desc: "This case was added on the 29th of November, 2016; it was the first case to feature Gloves as it's Exceedingly Rare item!",
+        milspec: [
+          {
+            name: "CZ75-Auto | Polymer",
+            icon: "CZ75AutoPolymer",
+            minfloat: "0.00",
+            maxfloat: "0.14",
+            canbestattrak: true
+          },
+          {
+            name: "MAG-7 | Sonar",
+            icon: "MAG7Sonar",
+            minfloat: "0.06",
+            maxfloat: "0.80",
+            canbestattrak: true
+          },
+          {
+            name: "MP9 | Sand Scale",
+            icon: "MP9SandScale",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "P2000 | Turf",
+            icon: "P2000Turf",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "Galil AR | Black Sand",
+            icon: "GalilARBlackSand",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "MP7 | Cirrus",
+            icon: "MP7Cirrus",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "Glock-18 | Ironwork",
+            icon: "Glock18Ironwork",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          }
+        ],
+        restricted: [
+          {
+            name: "G3SG1 | Stinger",
+            icon: "G3SG1Stinger",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          },
+          {
+            name: "Nova | Gila",
+            icon: "NovaGila",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "Dual Berettas | Royal Consorts",
+            icon: "DualBerettasRoyalConsorts",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "M4A1-S | Flashback",
+            icon: "M4A1SFlashback",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "USP-S | Cyrex",
+            icon: "USPSCyrex",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          }
+        ],
+        classified: [
+          {
+            name: "Sawed-Off | Wasteland Princess",
+            icon: "SawedOffWastelandPrincess",
+            minfloat: "0.00",
+            maxfloat: "1.00",
+            canbestattrak: true
+          },
+          {
+            name: "P90 | Shallow Grave",
+            icon: "P90ShallowGrave",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          },
+          {
+            name: "FAMAS | Mecha Industries",
+            icon: "FAMASMechaIndustries",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          }
+        ],
+        covert: [
+          {
+            name: "SSG 08 | Dragonfire",
+            icon: "SSG08Dragonfire",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          },
+          {
+            name: "M4A4 | Buzz Kill",
+            icon: "M4A4BuzzKill",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          }
+        ],
+        gold: {
+          gloves: ["Bloodhound Gloves | Guerrilla","Bloodhound Gloves | Charred","Bloodhound Gloves | Snakebite","Bloodhound Gloves | Bronzed","Driver Gloves | Crimson Weave","Driver Gloves | Diamondback","Driver Gloves | Lunar Weave","Driver Gloves | Convoy","Hand Wraps | Slaughter","Hand Wraps | Leather","Hand Wraps | Spruce DDPAT","Hand Wraps | Badlands","Moto Gloves | Spearmint","Moto Gloves | Cool Mint","Moto Gloves | Boom!","Moto Gloves | Eclipse","Specialist Gloves | Crimson Kimono","Specialist Gloves | Emerald Web","Specialist Gloves | Foundation","Specialist Gloves | Forest DDPAT","Sport Gloves | Superconductor","Sport Gloves | Pandora's Box","Sport Gloves | Hedge Maze","Sport Gloves | Arid"],
+          icons:  ["BloodhoundGlovesGuerrilla",    "BloodhoundGlovesCharred",    "BloodhoundGlovesSnakebite",    "BloodhoundGlovesBronzed",    "DriverGlovesCrimsonWeave",     "DriverGlovesDiamondback",    "DriverGlovesLunarWeave",     "DriverGlovesConvoy",    "HandWrapsSlaughter",    "HandWrapsLeather",    "HandWrapsSpruceDDPAT",     "HandWrapsBadlands",    "MotoGlovesSpearmint"    ,"MotoGlovesCoolMint",     "MotoGlovesBoom",     "MotoGlovesEclipse",    "SpecialistGlovesCrimsonKimono",
+                  "SpecialistGlovesEmeraldWeb",     "SpecialistGlovesFoundation",    "SpecialistGlovesForestDDPAT",     "SportGlovesSuperconductor",    "SportGlovesPandorasBox",      "SportGlovesHedgeMaze",     "SportGlovesArid"]
+        }
       }
     ]
     function loadacase(){
@@ -1957,83 +2471,55 @@ document.addEventListener("DOMContentLoaded", function(){
           }
         }
       }
-      for (var i = 0; i < cases[currentcase].gold.knives.length; i++) {
-        for (var x = 0; x < cases[currentcase].gold.patterns.length; x++) {
-          cases[currentcase].gold.knives[i]
-          cases[currentcase].gold.patterns[x]
-          var knifeicon = getknifeicon(cases[currentcase].gold.knives[i], cases[currentcase].gold.patterns[x])
-          var knifename = getknifename(cases[currentcase].gold.knives[i], cases[currentcase].gold.patterns[x])
-          var knifefloats = getpatternfloats(cases[currentcase].gold.patterns[x])
+      if (cases[currentcase].type == "glove") {
+        for (var i = 0; i < cases[currentcase].gold.gloves.length; i++) {
+          var knifeicon = cases[currentcase].gold.icons[i]+".png"
+          var knifename = cases[currentcase].gold.gloves[i]
           var itemicon = document.createElement("img")
-          itemicon.src = "weaponicons/knives/"+knifeicon
+          itemicon.src = "weaponicons/gloves/"+knifeicon
           itemicon.className = "weaponicon gold"
 
           var itemtooltip = document.createElement("span")
           var itemst = document.createElement("span")
-          itemst.className = 'stattrak'
-          itemst.appendChild(document.createTextNode(`Can Be StatTrak™`))
+          itemst.appendChild(document.createTextNode(`Cannot Be StatTrak™`))
           itemtooltip.className = 'ict'
           itemtooltip.appendChild(itemst)
+
           if (window.pricelist["★ "+knifename + " (Factory New)"]) {
             itemtooltip.appendChild(document.createElement("br"))
             itemtooltip.appendChild(document.createTextNode("FN: $"+window.pricelist["★ "+knifename + " (Factory New)"]))
-            if (window.pricelist["★ "+"StatTrak™ " + knifename + " (Factory New)"]) {
-              var itemst = document.createElement("span")
-              itemst.appendChild(document.createTextNode(" $"+window.pricelist["★ "+"StatTrak™ " + knifename + " (Factory New)"]))
-              itemst.className = 'stattrak'
-              itemtooltip.appendChild(itemst)
-            }
+          } else {
+            itemtooltip.appendChild(document.createElement("br"))
+            itemtooltip.appendChild(document.createTextNode("FN: Unpriced"))
           }
           if (window.pricelist["★ "+knifename + " (Minimal Wear)"]) {
             itemtooltip.appendChild(document.createElement("br"))
             itemtooltip.appendChild(document.createTextNode("MW: $"+window.pricelist["★ "+knifename + " (Minimal Wear)"]))
-            if (window.pricelist["★ "+"StatTrak™ " + knifename + " (Minimal Wear)"]) {
-              var itemst = document.createElement("span")
-              itemst.appendChild(document.createTextNode(" $"+window.pricelist["★ "+"StatTrak™ " + knifename + " (Minimal Wear)"]))
-              itemst.className = 'stattrak'
-              itemtooltip.appendChild(itemst)
-            }
+          } else {
+            itemtooltip.appendChild(document.createElement("br"))
+            itemtooltip.appendChild(document.createTextNode("MW: Unpriced"))
           }
           if (window.pricelist["★ "+knifename + " (Field-Tested)"]) {
             itemtooltip.appendChild(document.createElement("br"))
             itemtooltip.appendChild(document.createTextNode("FT: $"+window.pricelist["★ "+knifename + " (Field-Tested)"]))
-            if (window.pricelist["★ "+"StatTrak™ " + knifename + " (Field-Tested)"]) {
-              var itemst = document.createElement("span")
-              itemst.appendChild(document.createTextNode(" $"+window.pricelist["★ "+"StatTrak™ " + knifename + " (Field-Tested)"]))
-              itemst.className = 'stattrak'
-              itemtooltip.appendChild(itemst)
-            }
+          } else {
+            itemtooltip.appendChild(document.createElement("br"))
+            itemtooltip.appendChild(document.createTextNode("FT: Unpriced"))
           }
           if (window.pricelist["★ "+knifename + " (Well-Worn)"]) {
             itemtooltip.appendChild(document.createElement("br"))
             itemtooltip.appendChild(document.createTextNode("WW: $"+window.pricelist["★ "+knifename + " (Well-Worn)"]))
-            if (window.pricelist["★ "+"StatTrak™ " + knifename + " (Well-Worn)"]) {
-              var itemst = document.createElement("span")
-              itemst.appendChild(document.createTextNode(" $"+window.pricelist["★ "+"StatTrak™ " + knifename + " (Well-Worn)"]))
-              itemst.className = 'stattrak'
-              itemtooltip.appendChild(itemst)
-            }
+          } else {
+            itemtooltip.appendChild(document.createElement("br"))
+            itemtooltip.appendChild(document.createTextNode("WW: Unpriced"))
           }
           if (window.pricelist["★ "+knifename + " (Battle-Scarred)"]) {
             itemtooltip.appendChild(document.createElement("br"))
             itemtooltip.appendChild(document.createTextNode("BS: $"+window.pricelist["★ "+knifename + " (Battle-Scarred)"]))
-            if (window.pricelist["★ "+"StatTrak™ " + knifename + " (Battle-Scarred)"]) {
-              var itemst = document.createElement("span")
-              itemst.appendChild(document.createTextNode(" $"+window.pricelist["★ "+"StatTrak™ " + knifename + " (Battle-Scarred)"]))
-              itemst.className = 'stattrak'
-              itemtooltip.appendChild(itemst)
-            }
-          }
-          if (knifename.includes("Vanilla")) {
+          } else {
             itemtooltip.appendChild(document.createElement("br"))
-            itemtooltip.appendChild(document.createTextNode("$"+window.pricelist["★ "+cases[currentcase].gold.knives[i]]))
-            var itemst = document.createElement("span")
-            itemst.appendChild(document.createTextNode(" $"+window.pricelist["★ StatTrak™ " +cases[currentcase].gold.knives[i]]))
-            itemst.className = 'stattrak'
-            itemtooltip.appendChild(itemst)
+            itemtooltip.appendChild(document.createTextNode("BS: Unpriced"))
           }
-          //itemtooltip.appendChild(document.createElement("br"))
-          //itemtooltip.appendChild(document.createTextNode("Float: "+knifefloats[0]+" - "+knifefloats[1]))
 
           var itemname = document.createElement("div")
           itemname.appendChild(document.createTextNode("★ "+knifename))
@@ -2045,6 +2531,122 @@ document.addEventListener("DOMContentLoaded", function(){
           itemcontainer.appendChild(itemtooltip)
 
           document.getElementById("casecontent").append(itemcontainer)
+        }
+      } else {
+        for (var i = 0; i < cases[currentcase].gold.knives.length; i++) {
+          for (var x = 0; x < cases[currentcase].gold.patterns.length; x++) {
+            cases[currentcase].gold.knives[i]
+            cases[currentcase].gold.patterns[x]
+            var knifeicon = getknifeicon(cases[currentcase].gold.knives[i], cases[currentcase].gold.patterns[x])
+            var knifename = getknifename(cases[currentcase].gold.knives[i], cases[currentcase].gold.patterns[x])
+            var knifefloats = getpatternfloats(cases[currentcase].gold.patterns[x])
+            var itemicon = document.createElement("img")
+            itemicon.src = "weaponicons/knives/"+knifeicon
+            itemicon.className = "weaponicon gold"
+
+            var itemtooltip = document.createElement("span")
+            var itemst = document.createElement("span")
+            itemst.className = 'stattrak'
+            itemst.appendChild(document.createTextNode(`Can Be StatTrak™`))
+            itemtooltip.className = 'ict'
+            itemtooltip.appendChild(itemst)
+            if (window.pricelist["★ "+knifename + " (Factory New)"]) {
+              itemtooltip.appendChild(document.createElement("br"))
+              itemtooltip.appendChild(document.createTextNode("FN: $"+window.pricelist["★ "+knifename + " (Factory New)"]))
+              if (window.pricelist["★ "+"StatTrak™ " + knifename + " (Factory New)"]) {
+                var itemst = document.createElement("span")
+                itemst.appendChild(document.createTextNode(" $"+window.pricelist["★ "+"StatTrak™ " + knifename + " (Factory New)"]))
+                itemst.className = 'stattrak'
+                itemtooltip.appendChild(itemst)
+              } else {
+                var itemst = document.createElement("span")
+                itemst.appendChild(document.createTextNode(" Unpriced"))
+                itemst.className = 'stattrak'
+                itemtooltip.appendChild(itemst)
+              }
+            }
+            if (window.pricelist["★ "+knifename + " (Minimal Wear)"]) {
+              itemtooltip.appendChild(document.createElement("br"))
+              itemtooltip.appendChild(document.createTextNode("MW: $"+window.pricelist["★ "+knifename + " (Minimal Wear)"]))
+              if (window.pricelist["★ "+"StatTrak™ " + knifename + " (Minimal Wear)"]) {
+                var itemst = document.createElement("span")
+                itemst.appendChild(document.createTextNode(" $"+window.pricelist["★ "+"StatTrak™ " + knifename + " (Minimal Wear)"]))
+                itemst.className = 'stattrak'
+                itemtooltip.appendChild(itemst)
+              } else {
+                var itemst = document.createElement("span")
+                itemst.appendChild(document.createTextNode(" Unpriced"))
+                itemst.className = 'stattrak'
+                itemtooltip.appendChild(itemst)
+              }
+            }
+            if (window.pricelist["★ "+knifename + " (Field-Tested)"]) {
+              itemtooltip.appendChild(document.createElement("br"))
+              itemtooltip.appendChild(document.createTextNode("FT: $"+window.pricelist["★ "+knifename + " (Field-Tested)"]))
+              if (window.pricelist["★ "+"StatTrak™ " + knifename + " (Field-Tested)"]) {
+                var itemst = document.createElement("span")
+                itemst.appendChild(document.createTextNode(" $"+window.pricelist["★ "+"StatTrak™ " + knifename + " (Field-Tested)"]))
+                itemst.className = 'stattrak'
+                itemtooltip.appendChild(itemst)
+              } else {
+                var itemst = document.createElement("span")
+                itemst.appendChild(document.createTextNode(" Unpriced"))
+                itemst.className = 'stattrak'
+                itemtooltip.appendChild(itemst)
+              }
+            }
+            if (window.pricelist["★ "+knifename + " (Well-Worn)"]) {
+              itemtooltip.appendChild(document.createElement("br"))
+              itemtooltip.appendChild(document.createTextNode("WW: $"+window.pricelist["★ "+knifename + " (Well-Worn)"]))
+              if (window.pricelist["★ "+"StatTrak™ " + knifename + " (Well-Worn)"]) {
+                var itemst = document.createElement("span")
+                itemst.appendChild(document.createTextNode(" $"+window.pricelist["★ "+"StatTrak™ " + knifename + " (Well-Worn)"]))
+                itemst.className = 'stattrak'
+                itemtooltip.appendChild(itemst)
+              } else {
+                var itemst = document.createElement("span")
+                itemst.appendChild(document.createTextNode(" Unpriced"))
+                itemst.className = 'stattrak'
+                itemtooltip.appendChild(itemst)
+              }
+            }
+            if (window.pricelist["★ "+knifename + " (Battle-Scarred)"]) {
+              itemtooltip.appendChild(document.createElement("br"))
+              itemtooltip.appendChild(document.createTextNode("BS: $"+window.pricelist["★ "+knifename + " (Battle-Scarred)"]))
+              if (window.pricelist["★ "+"StatTrak™ " + knifename + " (Battle-Scarred)"]) {
+                var itemst = document.createElement("span")
+                itemst.appendChild(document.createTextNode(" $"+window.pricelist["★ "+"StatTrak™ " + knifename + " (Battle-Scarred)"]))
+                itemst.className = 'stattrak'
+                itemtooltip.appendChild(itemst)
+              } else {
+                var itemst = document.createElement("span")
+                itemst.appendChild(document.createTextNode(" Unpriced"))
+                itemst.className = 'stattrak'
+                itemtooltip.appendChild(itemst)
+              }
+            }
+            if (knifename.includes("Vanilla")) {
+              itemtooltip.appendChild(document.createElement("br"))
+              itemtooltip.appendChild(document.createTextNode("$"+window.pricelist["★ "+cases[currentcase].gold.knives[i]]))
+              var itemst = document.createElement("span")
+              itemst.appendChild(document.createTextNode(" $"+window.pricelist["★ StatTrak™ " +cases[currentcase].gold.knives[i]]))
+              itemst.className = 'stattrak'
+              itemtooltip.appendChild(itemst)
+            }
+            //itemtooltip.appendChild(document.createElement("br"))
+            //itemtooltip.appendChild(document.createTextNode("Float: "+knifefloats[0]+" - "+knifefloats[1]))
+
+            var itemname = document.createElement("div")
+            itemname.appendChild(document.createTextNode("★ "+knifename))
+
+            var itemcontainer = document.createElement("div")
+            itemcontainer.className = "ic"
+            itemcontainer.appendChild(itemicon)
+            itemcontainer.appendChild(itemname)
+            itemcontainer.appendChild(itemtooltip)
+
+            document.getElementById("casecontent").append(itemcontainer)
+          }
         }
       }
     }
