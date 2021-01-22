@@ -587,6 +587,81 @@ html {
   filter: drop-shadow(0px 0px 4px black);
 }
 
+.topitemcontainer {
+  height: 100px;
+  width: 95%;
+  transition: 0.5s;
+  position: relative;
+  display: block;
+  margin: 5px 0px 5px 0px;
+  padding: 15px 0px 15px 0px;
+  background: rgba(0,0,0,0.3);
+  cursor: help;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.topitemcontainer:hover {
+  width: 99%;
+}
+.topitemname {
+  top: 5px;
+  left: 170px;
+  font-size: 25px;
+  transition: 0.5s;
+  opacity: 0.5;
+  position: absolute;
+  white-space: nowrap;
+}
+.topitemcontainer:hover .topitemname {
+  left: 185px;
+  font-size: 17px;
+  opacity: 1;
+  visibility: visible;
+}
+.topitemicon {
+  height: 100%;
+  font-size: 0px;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  position: absolute;
+}
+.topitemcontainer:hover .topitemicon {
+  left: 15px;
+}
+.topitemprice {
+  top: 35px;
+  left: 170px;
+  font-size: 19px;
+  transition: 0.5s;
+  opacity: 0.7;
+  position: absolute;
+  white-space: nowrap;
+  color: var(--tc);
+}
+.topitemcontainer:hover .topitemprice {
+  left: 185px;
+  opacity: 1;
+  top: 25px;
+  font-size: 14px;
+}
+.tintr {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 55px 55px 0;
+  border-color: transparent var(--bg) transparent transparent;
+}
+.tin {
+  top: 0;
+  right: 0;
+  font-size: 18px;
+  position: absolute;
+  padding: 3px;
+}
 
 ::-webkit-scrollbar {
   width: 8px;

@@ -2366,7 +2366,7 @@ document.addEventListener("DOMContentLoaded", function(){
           },
           {
             name: "M4A4 | Buzz Kill",
-            icon: "M4A4BuzzKill",
+            icon: "M4A4Buzzkill",
             minfloat: "0.00",
             maxfloat: "0.08",
             canbestattrak: true
@@ -2376,6 +2376,145 @@ document.addEventListener("DOMContentLoaded", function(){
           gloves: ["Bloodhound Gloves | Guerrilla","Bloodhound Gloves | Charred","Bloodhound Gloves | Snakebite","Bloodhound Gloves | Bronzed","Driver Gloves | Crimson Weave","Driver Gloves | Diamondback","Driver Gloves | Lunar Weave","Driver Gloves | Convoy","Hand Wraps | Slaughter","Hand Wraps | Leather","Hand Wraps | Spruce DDPAT","Hand Wraps | Badlands","Moto Gloves | Spearmint","Moto Gloves | Cool Mint","Moto Gloves | Boom!","Moto Gloves | Eclipse","Specialist Gloves | Crimson Kimono","Specialist Gloves | Emerald Web","Specialist Gloves | Foundation","Specialist Gloves | Forest DDPAT","Sport Gloves | Superconductor","Sport Gloves | Pandora's Box","Sport Gloves | Hedge Maze","Sport Gloves | Arid"],
           icons:  ["BloodhoundGlovesGuerrilla",    "BloodhoundGlovesCharred",    "BloodhoundGlovesSnakebite",    "BloodhoundGlovesBronzed",    "DriverGlovesCrimsonWeave",     "DriverGlovesDiamondback",    "DriverGlovesLunarWeave",     "DriverGlovesConvoy",    "HandWrapsSlaughter",    "HandWrapsLeather",    "HandWrapsSpruceDDPAT",     "HandWrapsBadlands",    "MotoGlovesSpearmint"    ,"MotoGlovesCoolMint",     "MotoGlovesBoom",     "MotoGlovesEclipse",    "SpecialistGlovesCrimsonKimono",
                   "SpecialistGlovesEmeraldWeb",     "SpecialistGlovesFoundation",    "SpecialistGlovesForestDDPAT",     "SportGlovesSuperconductor",    "SportGlovesPandorasBox",      "SportGlovesHedgeMaze",     "SportGlovesArid"]
+        }
+      },
+      {
+        name: "Clutch Case",
+        type: "glove",
+        icon: "weaponcase1.png",
+        desc: "This case was added on the 16th of February, 2018.",
+        milspec: [
+          {
+            name: "PP-Bizon | Night Riot",
+            icon: "PPBizonNightRiot",
+            minfloat: "0.00",
+            maxfloat: "0.14",
+            canbestattrak: true
+          },
+          {
+            name: "XM1014 | Oxide Blaze",
+            icon: "XM1014OxideBlaze",
+            minfloat: "0.06",
+            maxfloat: "0.80",
+            canbestattrak: true
+          },
+          {
+            name: "P2000 | Urban Hazard",
+            icon: "P2000UrbanHazard",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "Five-SeveN | Flame Test",
+            icon: "FiveSeveNFlameTest",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "SG 553 | Aloha",
+            icon: "SG553Aloha",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "R8 Revolver | Grip",
+            icon: "R8RevolverGrip",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "MP9 | Black Sand",
+            icon: "MP9BlackSand",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          }
+        ],
+        restricted: [
+          {
+            name: "Negev | Lionfish",
+            icon: "NegevLionfish",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          },
+          {
+            name: "Nova | Wild Six",
+            icon: "NovaWildSix",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "UMP-45 | Arctic Wolf",
+            icon: "UMP45ArcticWolf",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "MAG-7 | SWAG-7",
+            icon: "MAG7SWAG7",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "Glock-18 | Moonrise",
+            icon: "Glock18Moonrise",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          }
+        ],
+        classified: [
+          {
+            name: "AUG | Stymphalian",
+            icon: "AUGStymphalian",
+            minfloat: "0.00",
+            maxfloat: "1.00",
+            canbestattrak: true
+          },
+          {
+            name: "AWP | Mortis",
+            icon: "AWPMortis",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          },
+          {
+            name: "USP-S | Cortex",
+            icon: "USPSCortex",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          }
+        ],
+        covert: [
+          {
+            name: "MP7 | Bloodsport",
+            icon: "MP7Bloodsport",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          },
+          {
+            name: "M4A4 | Neo-Noir",
+            icon: "M4A4NeoNoir",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          }
+        ],
+        gold: {
+          gloves: ["Driver Gloves | Imperial Plaid","Driver Gloves | King Snake","Driver Gloves | Overtake","Driver Gloves | Racing Green","Hand Wraps | Cobalt Skulls","Hand Wraps | Overprint","Hand Wraps | Duct Tape","Hand Wraps | Arboreal","Hydra Gloves | Emerald","Hydra Gloves | Mangrove","Hydra Gloves | Case Hardened","Hydra Gloves | Rattler","Moto Gloves | POW!","Moto Gloves | Polygon",
+          "Moto Gloves | Turtle","Moto Gloves | Transport","Specialist Gloves | Fade","Specialist Gloves | Crimson Web","Specialist Gloves | Mogul","Specialist Gloves | Buckshot","Sport Gloves | Vice","Sport Gloves | Omega","Sport Gloves | Amphibious","Sport Gloves | Bronze Morph"],
+          icons:  ["DriverGlovesImperialPlaid",     "DriverGlovesKingSnake",     "DriverGlovesOvertake",    "DriverGlovesRacingGreen",     "HandWrapsCobaltSkulls",     "HandWrapsOverprint",    "HandWrapsDuctTape",     "HandWrapsArboreal",    "HydraGlovesEmerald",    "HydraGlovesMangrove",    "HydraGlovesCaseHardened",     "HydraGlovesRattler",    "MotoGlovesPOW",     "MotoGlovesPolygon" ,
+          "MotoGlovesTurtle",    "MotoGlovesTransport",    "SpecialistGlovesFade",    "SpecialistGlovesCrimsonWeb",     "SpecialistGlovesMogul",    "SpecialistGlovesBuckshot",    "SportGlovesVice",    "SportGlovesOmega",    "SportGlovesAmphibious",    "SportGlovesBronzeMorph"]
         }
       }
     ]
@@ -2677,5 +2816,509 @@ document.addEventListener("DOMContentLoaded", function(){
     document.getElementById('loadcase24').addEventListener('click', function(){currentcase = 23; loadacase()})
     document.getElementById('loadcase25').addEventListener('click', function(){currentcase = 24; loadacase()})
     document.getElementById('loadcase26').addEventListener('click', function(){currentcase = 25; loadacase()})
+  }
+  if (toppage) {
+    var topitems = [
+      {
+        "name": "★ StatTrak™ M9 Bayonet | Crimson Web (Factory New)",
+        "price": 6500,
+        "notes": "",
+        "origin": "",
+        "icon": "weaponicons/knives/M9Bayonet/CrimsonWeb.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ StatTrak™ Falchion Knife | Crimson Web (Factory New)",
+        "price": 6500,
+        "notes": "",
+        "icon": "weaponicons/knives/FalchionKnife/CrimsonWeb.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Sport Gloves | Amphibious (Factory New)",
+        "price": 5770.38,
+        "notes": "",
+        "icon": "weaponicons/gloves/SportGlovesAmphibious.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Sport Gloves | Pandora's Box (Factory New)",
+        "price": 5725.33,
+        "notes": "",
+        "icon": "weaponicons/gloves/SportGlovesPandorasBox.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Driver Gloves | King Snake (Factory New)",
+        "price": 5234.44,
+        "notes": "",
+        "icon": "weaponicons/gloves/DriverGlovesKingSnake.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Sport Gloves | Vice (Factory New)",
+        "price": 5049.5,
+        "notes": "",
+        "icon": "weaponicons/gloves/SportGlovesVice.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ StatTrak™ Karambit | Night (Factory New)",
+        "price": 3750,
+        "notes": "",
+        "icon": "weaponicons/knives/Karambit/Night.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Driver Gloves | Imperial Plaid (Factory New)",
+        "price": 3725,
+        "notes": "",
+        "icon": "weaponicons/gloves/DriverGlovesImperialPlaid.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ StatTrak™ Gut Knife | Night (Factory New)",
+        "price": 3669.87,
+        "notes": "",
+        "icon": "weaponicons/knives/GutKnife/Night.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ M9 Bayonet | Crimson Web (Factory New)",
+        "price": 3600,
+        "notes": "",
+        "icon": "weaponicons/knives/M9Bayonet/CrimsonWeb.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ StatTrak™ Bayonet | Night (Factory New)",
+        "price": 3500,
+        "notes": "",
+        "icon": "weaponicons/knives/Bayonet/Night.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Specialist Gloves | Crimson Kimono (Factory New)",
+        "price": 3475.47,
+        "notes": "",
+        "icon": "weaponicons/gloves/SpecialistGlovesCrimsonKimono.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ StatTrak™ M9 Bayonet | Night (Factory New)",
+        "price": 2968.24,
+        "notes": "",
+        "icon": "weaponicons/knives/M9Bayonet/Night.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "StatTrak™ AK-47 | Fire Serpent (Factory New)",
+        "price": 2899.99,
+        "notes": "",
+        "icon": "weaponicons/AK47FireSerpent.png",
+        "quality": "Covert",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Moto Gloves | POW! (Factory New)",
+        "price": 2769,
+        "notes": "",
+        "icon": "weaponicons/gloves/MotoGlovesPOW.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Sport Gloves | Superconductor (Factory New)",
+        "price": 2700,
+        "notes": "",
+        "icon": "weaponicons/gloves/SportGlovesSuperconductor.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Hand Wraps | Cobalt Skulls (Factory New)",
+        "price": 2681.54,
+        "notes": "",
+        "icon": "weaponicons/gloves/HandWrapsCobaltSkulls.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ StatTrak™ Gut Knife | Crimson Web (Factory New)",
+        "price": 2500,
+        "notes": "",
+        "icon": "weaponicons/knives/GutKnife/CrimsonWeb.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ StatTrak™ Huntsman Knife | Night (Factory New)",
+        "price": 2350,
+        "notes": "",
+        "icon": "weaponicons/knives/Huntsman/Night.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ StatTrak™ Flip Knife | Night (Factory New)",
+        "price": 2277.22,
+        "notes": "",
+        "icon": "weaponicons/knives/FlipKnife/Night.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Driver Gloves | Crimson Weave (Factory New)",
+        "price": 2212,
+        "notes": "",
+        "icon": "weaponicons/gloves/DriverGlovesCrimsonWeave.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Bloodhound Gloves | Snakebite (Factory New)",
+        "price": 2064.99,
+        "notes": "",
+        "icon": "weaponicons/gloves/BloodhoundGlovesSnakebite.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Specialist Gloves | Emerald Web (Factory New)",
+        "price": 2049.25,
+        "notes": "",
+        "icon": "weaponicons/gloves/SpecialistGlovesEmeraldWeb.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ StatTrak™ Bowie Knife | Night (Factory New)",
+        "price": 1980.29,
+        "notes": "",
+        "icon": "weaponicons/knives/BowieKnife/Night.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Specialist Gloves | Crimson Web (Factory New)",
+        "price": 1900.01,
+        "notes": "",
+        "icon": "weaponicons/gloves/SpecialistGlovesCrimsonWeb.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Specialist Gloves | Fade (Factory New)",
+        "price": 1896.09,
+        "notes": "",
+        "icon": "weaponicons/gloves/SpecialistGlovesFade.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Karambit | Crimson Web (Factory New)",
+        "price": 1862.5,
+        "notes": "",
+        "icon": "weaponicons/knives/Karambit/CrimsonWeb.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Sport Gloves | Omega (Factory New)",
+        "price": 1835.75,
+        "notes": "",
+        "icon": "weaponicons/gloves/SportGlovesOmega.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Moto Gloves | Spearmint (Factory New)",
+        "price": 1800,
+        "notes": "",
+        "icon": "weaponicons/gloves/MotoGlovesSpearmint.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ StatTrak™ Shadow Daggers | Scorched (Factory New)",
+        "price": 1692.48,
+        "notes": "",
+        "icon": "weaponicons/knives/ShadowDaggers/Scorched.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Moto Gloves | Polygon (Factory New)",
+        "price": 1621.22,
+        "notes": "",
+        "icon": "weaponicons/gloves/MotoGlovesPolygon.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Sport Gloves | Hedge Maze (Factory New)",
+        "price": 1617.5,
+        "notes": "",
+        "icon": "weaponicons/gloves/SportGlovesHedgeMaze.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Bloodhound Gloves | Charred (Factory New)",
+        "price": 1600,
+        "notes": "",
+        "icon": "weaponicons/gloves/BloodhoundGlovesCharred.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Hand Wraps | Overprint (Factory New)",
+        "price": 1503.66,
+        "notes": "",
+        "icon": "weaponicons/gloves/HandWrapsOverprint.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Specialist Gloves | Mogul (Factory New)",
+        "price": 1500,
+        "notes": "",
+        "icon": "weaponicons/gloves/SpecialistGlovesMogul.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Specialist Gloves | Foundation (Factory New)",
+        "price": 1499.99,
+        "notes": "",
+        "icon": "weaponicons/gloves/SpecialistGlovesFoundation.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ StatTrak™ Gut Knife | Stained (Factory New)",
+        "price": 1478.92,
+        "notes": "",
+        "icon": "weaponicons/knives/GutKnife/Stained.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ StatTrak™ Karambit | Lore (Factory New)",
+        "price": 1420,
+        "notes": "",
+        "icon": "weaponicons/knives/Karambit/Lore.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Specialist Gloves | Crimson Kimono (Minimal Wear)",
+        "price": 1396.65,
+        "notes": "",
+        "icon": "weaponicons/gloves/SpecialistGlovesCrimsonKimono.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Driver Gloves | Overtake (Factory New)",
+        "price": 1391.66,
+        "notes": "",
+        "icon": "weaponicons/gloves/DriverGlovesOvertake.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Karambit | Lore (Factory New)",
+        "price": 1391.61,
+        "notes": "",
+        "icon": "weaponicons/knives/Karambit/Lore.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Sport Gloves | Vice (Minimal Wear)",
+        "price": 1387.61,
+        "notes": "",
+        "icon": "weaponicons/gloves/SportGlovesVice.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ StatTrak™ Huntsman Knife | Crimson Web (Factory New)",
+        "price": 1375,
+        "notes": "",
+        "icon": "weaponicons/knives/Huntsman/CrimsonWeb.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Sport Gloves | Pandora's Box (Field-Tested)",
+        "price": 1352.3,
+        "notes": "",
+        "icon": "weaponicons/gloves/SportGlovesPandorasBox.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Specialist Gloves | Fade (Minimal Wear)",
+        "price": 1350.72,
+        "notes": "",
+        "icon": "weaponicons/gloves/SpecialistGlovesFade.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ StatTrak™ M9 Bayonet | Lore (Factory New)",
+        "price": 1335.49,
+        "notes": "",
+        "icon": "weaponicons/knives/M9Bayonet/Lore.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Sport Gloves | Superconductor (Minimal Wear)",
+        "price": 1261.39,
+        "notes": "",
+        "icon": "weaponicons/gloves/SportGlovesSuperconductor.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ M9 Bayonet | Lore (Factory New)",
+        "price": 1231.45,
+        "notes": "",
+        "icon": "weaponicons/knives/M9Bayonet/Lore.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Moto Gloves | Turtle (Factory New)",
+        "price": 1195.61,
+        "notes": "",
+        "icon": "weaponicons/gloves/MotoGlovesTurtle.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      },
+      {
+        "name": "★ Sport Gloves | Vice (Field-Tested)",
+        "price": 1181.89,
+        "notes": "",
+        "icon": "weaponicons/gloves/SportGlovesViceFT.png",
+        "quality": "Exceedingly Rare Special Item",
+        "rarityequation": "0*0*0*0",
+        "rarityresult": "0.00%"
+      }
+    ]
+    function getraritycolor(rarity){
+      switch (rarity) {
+        case "Exceedingly Rare Special Item":
+          return "222,173,0"
+          break;
+        case "Covert":
+          return "235,75,75"
+          break;
+        default:
+          return "222,173,0"
+      }
+    }
+
+    for (var i = 0; i < topitems.length; i++) {
+      var constructedtopitemdisplay = document.createElement('div')
+      constructedtopitemdisplay.className = 'topitemcontainer'
+      constructedtopitemdisplay.style.background = 'linear-gradient(90deg, rgba(29,29,29,0.4) 0%, rgba('+getraritycolor(topitems[i].quality)+', 0.3) 100%)'
+      constructedtopitemdisplay.style.border = '1px solid rgb('+getraritycolor(topitems[i].quality)+')'
+
+      var cin = document.createElement('div')
+      cin.appendChild(document.createTextNode(topitems[i].name))
+      cin.style.color = 'rgb('+getraritycolor(topitems[i].quality)+')'
+      cin.className = 'topitemname'
+      constructedtopitemdisplay.appendChild(cin)
+
+      var cip = document.createElement('div')
+      cip.appendChild(document.createTextNode('$'+topitems[i].price))
+      cip.className = 'topitemprice'
+      constructedtopitemdisplay.appendChild(cip)
+
+      var cii = document.createElement('img')
+      cii.className = 'topitemicon'
+      cii.style.filter = 'drop-shadow(0px 0px 4px rgb('+getraritycolor(topitems[i].quality)+'))'
+      cii.src = topitems[i].icon
+      constructedtopitemdisplay.appendChild(cii)
+
+      var tintr = document.createElement('div')
+      tintr.className = 'tintr'
+      constructedtopitemdisplay.appendChild(tintr)
+
+      var tin = document.createElement('div')
+      tin.className = 'tin'
+      tin.style.color = 'rgb('+getraritycolor(topitems[i].quality)+')'
+      tin.appendChild(document.createTextNode("#"+(i+1)))
+      constructedtopitemdisplay.appendChild(tin)
+
+      document.getElementById('topitemcontent').appendChild(constructedtopitemdisplay)
+    }
+    console.log(topitems)
   }
 });
