@@ -2516,6 +2516,144 @@ document.addEventListener("DOMContentLoaded", function(){
           icons:  ["DriverGlovesImperialPlaid",     "DriverGlovesKingSnake",     "DriverGlovesOvertake",    "DriverGlovesRacingGreen",     "HandWrapsCobaltSkulls",     "HandWrapsOverprint",    "HandWrapsDuctTape",     "HandWrapsArboreal",    "HydraGlovesEmerald",    "HydraGlovesMangrove",    "HydraGlovesCaseHardened",     "HydraGlovesRattler",    "MotoGlovesPOW",     "MotoGlovesPolygon" ,
           "MotoGlovesTurtle",    "MotoGlovesTransport",    "SpecialistGlovesFade",    "SpecialistGlovesCrimsonWeb",     "SpecialistGlovesMogul",    "SpecialistGlovesBuckshot",    "SportGlovesVice",    "SportGlovesOmega",    "SportGlovesAmphibious",    "SportGlovesBronzeMorph"]
         }
+      },
+      {
+        name: "Operation Hydra Case",
+        type: "glove",
+        icon: "weaponcase1.png",
+        desc: "This case was added on the 24th of May, 2017; it features the same special items as the glove case, but costs 7.50 a pop. Don't open it unless you want that AWP.",
+        milspec: [
+          {
+            name: "FAMAS | Macabre",
+            icon: "FAMASMacabre",
+            minfloat: "0.00",
+            maxfloat: "0.14",
+            canbestattrak: true
+          },
+          {
+            name: "UMP-45 | Metal Flowers",
+            icon: "UMP45MetalFlowers",
+            minfloat: "0.06",
+            maxfloat: "0.80",
+            canbestattrak: true
+          },
+          {
+            name: "Tec-9 | Cut Out",
+            icon: "Tec9CutOut",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "MAG-7 | Hard Water",
+            icon: "MAG7HardWater",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "MAC-10 | Aloha",
+            icon: "MAC10Aloha",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "M4A1-S | Briefing",
+            icon: "M4A1SBriefing",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "USP-S | Blueprint",
+            icon: "USPSBlueprint",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          }
+        ],
+        restricted: [
+          {
+            name: "P250 | Red Rock",
+            icon: "P250RedRock",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          },
+          {
+            name: "P2000 | Woodsman",
+            icon: "P2000Woodsman",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "SSG 08 | Death's Head",
+            icon: "SSG08DeathsHead",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "P90 | Death Grip",
+            icon: "P90DeathGrip",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          },
+          {
+            name: "AK-47 | Orbit Mk01",
+            icon: "AK47OrbitMk01",
+            minfloat: "0.10",
+            maxfloat: "0.26",
+            canbestattrak: true
+          }
+        ],
+        classified: [
+          {
+            name: "Galil AR | Sugar Rush",
+            icon: "GalilARSugarRush",
+            minfloat: "0.00",
+            maxfloat: "1.00",
+            canbestattrak: true
+          },
+          {
+            name: "Dual Berettas | Cobra Strike",
+            icon: "DualBerettasCobraStrike",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          },
+          {
+            name: "M4A4 | Hellfire",
+            icon: "M4A4Hellfire",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          }
+        ],
+        covert: [
+          {
+            name: "Five-SeveN | Hyper Beast",
+            icon: "FiveSeveNHyperBeast",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          },
+          {
+            name: "AWP | Oni Taiji",
+            icon: "AWPOniTaiji",
+            minfloat: "0.00",
+            maxfloat: "0.08",
+            canbestattrak: true
+          }
+        ],
+        gold: {
+          gloves: ["Bloodhound Gloves | Guerrilla","Bloodhound Gloves | Charred","Bloodhound Gloves | Snakebite","Bloodhound Gloves | Bronzed","Driver Gloves | Crimson Weave","Driver Gloves | Diamondback","Driver Gloves | Lunar Weave","Driver Gloves | Convoy","Hand Wraps | Slaughter","Hand Wraps | Leather","Hand Wraps | Spruce DDPAT","Hand Wraps | Badlands","Moto Gloves | Spearmint","Moto Gloves | Cool Mint","Moto Gloves | Boom!","Moto Gloves | Eclipse","Specialist Gloves | Crimson Kimono","Specialist Gloves | Emerald Web","Specialist Gloves | Foundation","Specialist Gloves | Forest DDPAT","Sport Gloves | Superconductor","Sport Gloves | Pandora's Box","Sport Gloves | Hedge Maze","Sport Gloves | Arid"],
+          icons:  ["BloodhoundGlovesGuerrilla",    "BloodhoundGlovesCharred",    "BloodhoundGlovesSnakebite",    "BloodhoundGlovesBronzed",    "DriverGlovesCrimsonWeave",     "DriverGlovesDiamondback",    "DriverGlovesLunarWeave",     "DriverGlovesConvoy",    "HandWrapsSlaughter",    "HandWrapsLeather",    "HandWrapsSpruceDDPAT",     "HandWrapsBadlands",    "MotoGlovesSpearmint"    ,"MotoGlovesCoolMint",     "MotoGlovesBoom",     "MotoGlovesEclipse",    "SpecialistGlovesCrimsonKimono",
+                  "SpecialistGlovesEmeraldWeb",     "SpecialistGlovesFoundation",    "SpecialistGlovesForestDDPAT",     "SportGlovesSuperconductor",    "SportGlovesPandorasBox",      "SportGlovesHedgeMaze",     "SportGlovesArid"]
+        }
       }
     ]
     function loadacase(){
@@ -2822,93 +2960,92 @@ document.addEventListener("DOMContentLoaded", function(){
       {
         "name": "★ StatTrak™ M9 Bayonet | Crimson Web (Factory New)",
         "price": 6500,
-        "notes": "",
-        "origin": "",
+        "notes": "It's the best item in CSGOClicker. It's super rare and hard to find even though it comes in a lot of cases. This is due to the fact that Factory New Crimson Web knives are a little less than 7x rarer than most other Knives' patterns",
+        "origin": "Revolver Case, Operation Vanguard Case, Operation Phoenix Case, CS:GO Weapon Case 3, eSports 2014 Summer Case, eSports 2013 Winter Case, CS:GO Weapon Case 2, Winter Offensive Weapon Case, eSports 2013 Case, CS:GO Weapon Case, Operation Bravo Case",
         "icon": "weaponicons/knives/M9Bayonet/CrimsonWeb.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
-        "rarityresult": "0.00%"
+        "rarityresult": "~0.00000519230769%"
       },
       {
         "name": "★ StatTrak™ Falchion Knife | Crimson Web (Factory New)",
         "price": 6500,
-        "notes": "",
+        "notes": "It's also a super rare knife, but it's way more common than it's M9 Bayonet counterpart. (Even though it has the same price for some reason...)",
         "icon": "weaponicons/knives/FalchionKnife/CrimsonWeb.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
-        "rarityresult": "0.00%"
+        "origin": "Falchion Case",
+        "rarityresult": "~0.0000259615385%"
       },
       {
         "name": "★ Sport Gloves | Amphibious (Factory New)",
         "price": 5770.38,
-        "notes": "",
+        "notes": "Ah yes, the quintessesntial 5K item. These bad boys are very rare, and mostly the reason that the clutch case is meta.",
         "icon": "weaponicons/gloves/SportGlovesAmphibious.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
-        "rarityresult": "0.00%"
+        "origin": "Clutch Case",
+        "rarityresult": "~0.0000140625%"
       },
       {
         "name": "★ Sport Gloves | Pandora's Box (Factory New)",
         "price": 5725.33,
-        "notes": "",
+        "notes": "The 5K of the glove and hydra case, these overpriced pieces of fabric are not as desirable as the Amphibs, but nearly as valuable.",
         "icon": "weaponicons/gloves/SportGlovesPandorasBox.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
-        "rarityresult": "0.00%"
+        "origin": "Glove Case, Operation Hydra Case",
+        "rarityresult": "~0.0000140625%"
       },
       {
         "name": "★ Driver Gloves | King Snake (Factory New)",
         "price": 5234.44,
-        "notes": "",
+        "notes": "Another 5K pair from the clutch case, the King Snakes are not seen as often as the Amphibs and Vices for some reason.",
         "icon": "weaponicons/gloves/DriverGlovesKingSnake.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
-        "rarityresult": "0.00%"
+        "origin": "Clutch Case",
+        "rarityresult": "~0.0000140625%"
       },
       {
         "name": "★ Sport Gloves | Vice (Factory New)",
         "price": 5049.5,
-        "notes": "",
+        "notes": "The last 5K pair in the clutch case, though these are the least valuable of the trio, they are super desirable and rare.",
         "icon": "weaponicons/gloves/SportGlovesVice.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
-        "rarityresult": "0.00%"
+        "origin": "Clutch Case",
+        "rarityresult": "~0.0000140625%"
       },
       {
         "name": "★ StatTrak™ Karambit | Night (Factory New)",
         "price": 3750,
-        "notes": "",
+        "notes": "You know, this is a super rare knife, on the same rarity level as the 6500 Crim Webs. Fun Fact: Banned used to have one IRL!",
         "icon": "weaponicons/knives/Karambit/Night.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
-        "rarityresult": "0.00%"
+        "origin": "Revolver Case, Operation Vanguard Case, Operation Phoenix Case, CS:GO Weapon Case 3, eSports 2014 Summer Case, eSports 2013 Winter Case, CS:GO Weapon Case 2, Winter Offensive Weapon Case, eSports 2013 Case, CS:GO Weapon Case, Operation Bravo Case",
+        "rarityresult": "~0.00000519230769%"
       },
       {
         "name": "★ Driver Gloves | Imperial Plaid (Factory New)",
         "price": 3725,
-        "notes": "",
+        "notes": "More OP gloves from the clutch case? You got it! But in all seriousness, why does clutch have so many top tier items?",
         "icon": "weaponicons/gloves/DriverGlovesImperialPlaid.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
-        "rarityresult": "0.00%"
+        "origin": "Clutch Case",
+        "rarityresult": "~0.0000140625%"
       },
       {
         "name": "★ StatTrak™ Gut Knife | Night (Factory New)",
         "price": 3669.87,
-        "notes": "",
+        "notes": "I don't think this price is accurate, but if it is, I will be dumbfounded. I would never pay this much for something that looks like a chode.",
         "icon": "weaponicons/knives/GutKnife/Night.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
-        "rarityresult": "0.00%"
+        "origin": "Revolver Case, Operation Vanguard Case, Operation Phoenix Case, CS:GO Weapon Case 3, eSports 2014 Summer Case, eSports 2013 Winter Case, CS:GO Weapon Case 2, Winter Offensive Weapon Case, eSports 2013 Case, CS:GO Weapon Case, Operation Bravo Case",
+        "rarityresult": "~0.00000519230769%"
       },
       {
         "name": "★ M9 Bayonet | Crimson Web (Factory New)",
         "price": 3600,
-        "notes": "",
+        "notes": "It's like it's 6500$ cousin, but it doesn't have StatTrak! (And it's 10x more common because of it.)",
         "icon": "weaponicons/knives/M9Bayonet/CrimsonWeb.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
-        "rarityresult": "0.00%"
+        "origin": "Revolver Case, Operation Vanguard Case, Operation Phoenix Case, CS:GO Weapon Case 3, eSports 2014 Summer Case, eSports 2013 Winter Case, CS:GO Weapon Case 2, Winter Offensive Weapon Case, eSports 2013 Case, CS:GO Weapon Case, Operation Bravo Case",
+        "rarityresult": "~0.0000519230769%"
       },
       {
         "name": "★ StatTrak™ Bayonet | Night (Factory New)",
@@ -2916,7 +3053,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/knives/Bayonet/Night.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -2925,7 +3062,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/gloves/SpecialistGlovesCrimsonKimono.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -2934,7 +3071,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/knives/M9Bayonet/Night.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -2943,7 +3080,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/AK47FireSerpent.png",
         "quality": "Covert",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -2952,7 +3089,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/gloves/MotoGlovesPOW.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -2961,7 +3098,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/gloves/SportGlovesSuperconductor.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -2970,7 +3107,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/gloves/HandWrapsCobaltSkulls.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -2979,7 +3116,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/knives/GutKnife/CrimsonWeb.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -2988,7 +3125,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/knives/Huntsman/Night.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -2997,7 +3134,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/knives/FlipKnife/Night.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -3006,7 +3143,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/gloves/DriverGlovesCrimsonWeave.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -3015,7 +3152,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/gloves/BloodhoundGlovesSnakebite.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -3024,7 +3161,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/gloves/SpecialistGlovesEmeraldWeb.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -3033,7 +3170,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/knives/BowieKnife/Night.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -3042,7 +3179,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/gloves/SpecialistGlovesCrimsonWeb.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -3051,7 +3188,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/gloves/SpecialistGlovesFade.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -3060,7 +3197,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/knives/Karambit/CrimsonWeb.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -3069,7 +3206,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/gloves/SportGlovesOmega.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -3078,7 +3215,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/gloves/MotoGlovesSpearmint.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -3087,7 +3224,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/knives/ShadowDaggers/Scorched.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -3096,7 +3233,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/gloves/MotoGlovesPolygon.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -3105,7 +3242,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/gloves/SportGlovesHedgeMaze.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -3114,7 +3251,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/gloves/BloodhoundGlovesCharred.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -3123,7 +3260,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/gloves/HandWrapsOverprint.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -3132,7 +3269,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/gloves/SpecialistGlovesMogul.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -3141,7 +3278,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/gloves/SpecialistGlovesFoundation.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -3150,7 +3287,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/knives/GutKnife/Stained.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -3159,7 +3296,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/knives/Karambit/Lore.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -3168,7 +3305,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/gloves/SpecialistGlovesCrimsonKimono.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -3177,7 +3314,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/gloves/DriverGlovesOvertake.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -3186,7 +3323,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/knives/Karambit/Lore.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -3195,7 +3332,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/gloves/SportGlovesVice.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -3204,7 +3341,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/knives/Huntsman/CrimsonWeb.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -3213,7 +3350,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/gloves/SportGlovesPandorasBox.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -3222,7 +3359,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/gloves/SpecialistGlovesFade.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -3231,7 +3368,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/knives/M9Bayonet/Lore.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -3240,7 +3377,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/gloves/SportGlovesSuperconductor.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -3249,7 +3386,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/knives/M9Bayonet/Lore.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -3258,7 +3395,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/gloves/MotoGlovesTurtle.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       },
       {
@@ -3267,7 +3404,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "notes": "",
         "icon": "weaponicons/gloves/SportGlovesViceFT.png",
         "quality": "Exceedingly Rare Special Item",
-        "rarityequation": "0*0*0*0",
+        "origin": "",
         "rarityresult": "0.00%"
       }
     ]
@@ -3303,9 +3440,27 @@ document.addEventListener("DOMContentLoaded", function(){
 
       var cii = document.createElement('img')
       cii.className = 'topitemicon'
-      cii.style.filter = 'drop-shadow(0px 0px 4px rgb('+getraritycolor(topitems[i].quality)+'))'
+      cii.style.filter = 'drop-shadow(0px 0px 4px rgb('+getraritycolor(topitems[i].quality)+')) saturate(1.2)'
       cii.src = topitems[i].icon
       constructedtopitemdisplay.appendChild(cii)
+
+      var cid = document.createElement('div')
+      cid.className = 'cid'
+      cid.style.color = 'rgb('+getraritycolor(topitems[i].quality)+')'
+      cid.style["border-color"] = 'rgb('+getraritycolor(topitems[i].quality)+')'
+      cid.appendChild(document.createTextNode(topitems[i].notes))
+      constructedtopitemdisplay.appendChild(cid)
+
+      var cio = document.createElement('div')
+      cio.className = 'cio'
+      cio.appendChild(document.createTextNode(topitems[i].origin))
+      constructedtopitemdisplay.appendChild(cio)
+
+      var cir = document.createElement('div')
+      cir.className = 'cir'
+      cir.style['border-color'] = 'rgb('+getraritycolor(topitems[i].quality)+')'
+      cir.appendChild(document.createTextNode(topitems[i].rarityresult))
+      constructedtopitemdisplay.appendChild(cir)
 
       var tintr = document.createElement('div')
       tintr.className = 'tintr'

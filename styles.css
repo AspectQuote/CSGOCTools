@@ -388,7 +388,7 @@ html {
   background: var(--bgc);
 }
 .changelog:after {
-  content: 'Changelog';
+  content: 'Site Changelog';
   border-radius: 5px;
   padding: 5px 20px 5px 20px;
   border: 1px solid var(--tc);
@@ -661,6 +661,82 @@ html {
   font-size: 18px;
   position: absolute;
   padding: 3px;
+}
+.cid {
+  opacity: 0;
+  top: 70px;
+  padding: 4px;
+  left: 180px;
+  width: 87%;
+  white-space: nowrap;
+  position: absolute;
+  transition: 0.5s;
+  border: 1px solid white;
+  background: var(--bgc);
+  font-size: 11px;
+}
+.cid:before {
+  content: "Aspect's Notes: ";
+  color: var(--tc);
+}
+.topitemcontainer:hover .cid {
+  opacity: 1;
+  top: 45px;
+  left: 190px;
+}
+.cio {
+  opacity: 0;
+  top: 100px;
+  padding: 4px;
+  left: 180px;
+  width: 65%;
+  position: absolute;
+  transition: 0.5s;
+  border: 1px solid white;
+  background: var(--bgc);
+  color: var(--tc);
+  font-size: 12px;
+}
+.cio:before {
+  content: "Can be found in: ";
+  color: var(--tc);
+}
+.topitemcontainer:hover .cio {
+  opacity: 1;
+  top: 78px;
+  left: 190px;
+}
+.cir {
+  opacity: 0;
+  bottom: 11px;
+  padding: 4px;
+  right: -1px;
+  position: absolute;
+  transition: 0.5s;
+  border: 1px solid white;
+  background: var(--bgc);
+  color: var(--tc);
+  font-size: 15px;
+  display: inline-block;
+  padding-bottom: 5px;
+  padding-left: 25px;
+  padding-right: 20px;
+}
+.cir:after {
+  content: 'Chance to Unbox';
+  width: 110%;
+  text-align: center;
+  position: absolute;
+  top: 90%;
+  right: -5%;
+  border: 1px solid white;
+  border-color: inherit;
+  font-size: 11px;
+  color: var(--ac);
+  background: var(--bgc);
+}
+.topitemcontainer:hover .cir {
+  opacity: 1;
 }
 
 ::-webkit-scrollbar {
