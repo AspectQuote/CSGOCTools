@@ -743,6 +743,25 @@ html {
 .invItemInfo[data-v-0d66b73d] {
   background: rgba(0,0,0,0) !important;
 }
+.secondaryName, .primaryName {
+  filter: drop-shadow(0px 0px 0px black) drop-shadow(0px 0px 0px black) drop-shadow(0px 0px 0px black) drop-shadow(0px 0px 0px black) !important;
+  font-size: 18px !important;
+  white-space: nowrap !important;
+}
+.price {
+  font-size: 16px !important;
+}
+.st {
+  font-size: 11px !important;
+}
+.invItemContainer {
+  width: 120px !important;
+  min-width: 120px !important;
+  height: 120px !important;
+}
+.invItemContainer .invItem .type[data-v-0d66b73d]{
+  font-size: 13px !important;
+}
 
 ::-webkit-scrollbar {
   width: 8px;
