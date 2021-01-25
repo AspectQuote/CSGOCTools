@@ -2896,7 +2896,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
             var itemicon = document.createElement("img")
             itemicon.src = "weaponicons/"+cases[currentcase][Object.keys(cases[currentcase])[i]][d].icon+".png"
-            itemicon.className = "weaponicon "+Object.keys(cases[currentcase])[i]
+            itemicon.className = "weaponicon this"+Object.keys(cases[currentcase])[i]
 
             var itemtooltip = document.createElement("span")
             var itemst = document.createElement("span")
@@ -2978,7 +2978,7 @@ document.addEventListener("DOMContentLoaded", function(){
           var knifename = cases[currentcase].gold.gloves[i]
           var itemicon = document.createElement("img")
           itemicon.src = "weaponicons/gloves/"+knifeicon
-          itemicon.className = "weaponicon gold"
+          itemicon.className = "weaponicon thisgold"
 
           var itemtooltip = document.createElement("span")
           var itemst = document.createElement("span")
@@ -3043,7 +3043,7 @@ document.addEventListener("DOMContentLoaded", function(){
             var knifefloats = getpatternfloats(cases[currentcase].gold.patterns[x])
             var itemicon = document.createElement("img")
             itemicon.src = "weaponicons/knives/"+knifeicon
-            itemicon.className = "weaponicon gold"
+            itemicon.className = "weaponicon thisgold"
 
             var itemtooltip = document.createElement("span")
             var itemst = document.createElement("span")
