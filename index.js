@@ -107,6 +107,24 @@ document.addEventListener("DOMContentLoaded", function(){
         case "Marble Fade":
           strret += "MarbleFade.png"
           break;
+        case "Lore":
+          strret += "Lore.png"
+          break;
+        case "Gamma Doppler":
+          strret += "GammaDoppler.png"
+          break;
+        case "Autotronic":
+          strret += "Autotronic.png"
+          break;
+        case "Black Laminate":
+          strret += "BlackLaminate.png"
+          break;
+        case "Bright Water":
+          strret += "BrightWater.png"
+          break;
+        case "Freehand":
+          strret += "Freehand.png"
+          break;
         default:
           strret += "Vanilla.png"
       }
@@ -2654,6 +2672,212 @@ document.addEventListener("DOMContentLoaded", function(){
           icons:  ["BloodhoundGlovesGuerrilla",    "BloodhoundGlovesCharred",    "BloodhoundGlovesSnakebite",    "BloodhoundGlovesBronzed",    "DriverGlovesCrimsonWeave",     "DriverGlovesDiamondback",    "DriverGlovesLunarWeave",     "DriverGlovesConvoy",    "HandWrapsSlaughter",    "HandWrapsLeather",    "HandWrapsSpruceDDPAT",     "HandWrapsBadlands",    "MotoGlovesSpearmint"    ,"MotoGlovesCoolMint",     "MotoGlovesBoom",     "MotoGlovesEclipse",    "SpecialistGlovesCrimsonKimono",
                   "SpecialistGlovesEmeraldWeb",     "SpecialistGlovesFoundation",    "SpecialistGlovesForestDDPAT",     "SportGlovesSuperconductor",    "SportGlovesPandorasBox",      "SportGlovesHedgeMaze",     "SportGlovesArid"]
         }
+      },
+      {
+        name: "Gamma Case",
+        type: "knife",
+        icon: "weaponcase1.png",
+        desc: "This case was released on the 16th of June, 2016.",
+        milspec: [
+          {
+            name: "PP-Bizon | Harvester",
+            icon: "PPBizonHarvester",
+            canbestattrak: true
+          },
+          {
+            name: "Nova | Exo",
+            icon: "NovaExo",
+            canbestattrak: true
+          },
+          {
+            name: "P250 | Iron Clad",
+            icon: "P250IronClad",
+            canbestattrak: true
+          },
+          {
+            name: "MAC-10 | Carnivore",
+            icon: "MAC10Carnivore",
+            canbestattrak: true
+          },
+          {
+            name: "Tec-9 | Ice Cap",
+            icon: "Tec9IceCap",
+            canbestattrak: true
+          },
+          {
+            name: "SG 553 | Aerial",
+            icon: "SG553Aerial",
+            canbestattrak: true
+          },
+          {
+            name: "Five-SeveN | Violent Daimyo",
+            icon: "FiveSeveNViolentDaimyo",
+            canbestattrak: true
+          }
+        ],
+        restricted: [
+          {
+            name: "Sawed-Off | Limelight",
+            icon: "SawedOffLimelight",
+            canbestattrak: true
+          },
+          {
+            name: "P90 | Chopper",
+            icon: "P90Chopper",
+            canbestattrak: true
+          },
+          {
+            name: "AUG | Aristocrat",
+            icon: "AUGAristocrat",
+            canbestattrak: true
+          },
+          {
+            name: "R8 Revolver | Reboot",
+            icon: "R8RevolverReboot",
+            canbestattrak: true
+          },
+          {
+            name: "AWP | Phobos",
+            icon: "AWPPhobos",
+            canbestattrak: true
+          }
+        ],
+        classified: [
+          {
+            name: "SCAR-20 | Bloodsport",
+            icon: "SCAR20Bloodsport",
+            canbestattrak: true
+          },
+          {
+            name: "P2000 | Imperial Dragon",
+            icon: "P2000ImperialDragon",
+            canbestattrak: true
+          },
+          {
+            name: "M4A4 | Desolate Space",
+            icon: "M4A4DesolateSpace",
+            canbestattrak: true
+          }
+        ],
+        covert: [
+          {
+            name: "Glock-18 | Wasteland Rebel",
+            icon: "Glock18WastelandRebel",
+            canbestattrak: true
+          },
+          {
+            name: "M4A1-S | Mecha Industries",
+            icon: "M4A1SMechaIndustries",
+            canbestattrak: true
+          }
+        ],
+        gold: {
+          knives: ["Bayonet", "Flip Knife", "Gut Knife", "Karambit", "M9 Bayonet"],
+          patterns: ["Lore", "Gamma Doppler", "Autotronic", "Black Laminate", "Bright Water", "Freehand"]
+        }
+      },
+      {
+        name: "Gamma 2 Case",
+        type: "knife",
+        icon: "weaponcase1.png",
+        desc: "This case was released on the 19th of August, 2016.",
+        milspec: [
+          {
+            name: "G3SG1 | Ventilator",
+            icon: "G3SG1Ventilator",
+            canbestattrak: true
+          },
+          {
+            name: "Five-SeveN | Scumbria",
+            icon: "FiveSeveNScumbria",
+            canbestattrak: true
+          },
+          {
+            name: "XM1014 | Slipstream",
+            icon: "XM1014Slipstream",
+            canbestattrak: true
+          },
+          {
+            name: "CZ75-Auto | Imprint",
+            icon: "CZ75AutoImprint",
+            canbestattrak: true
+          },
+          {
+            name: "UMP-45 | Briefing",
+            icon: "UMP45Briefing",
+            canbestattrak: true
+          },
+          {
+            name: "Negev | Dazzle",
+            icon: "NegevDazzle",
+            canbestattrak: true
+          },
+          {
+            name: "P90 | Grim",
+            icon: "P90Grim",
+            canbestattrak: true
+          }
+        ],
+        restricted: [
+          {
+            name: "SCAR-20 | Powercore",
+            icon: "SCAR20Powercore",
+            canbestattrak: true
+          },
+          {
+            name: "MAG-7 | Petroglyph",
+            icon: "MAG7Petroglyph",
+            canbestattrak: true
+          },
+          {
+            name: "SG 553 | Triarch",
+            icon: "SG553Triarch",
+            canbestattrak: true
+          },
+          {
+            name: "Glock-18 | Weasel",
+            icon: "Glock18Weasel",
+            canbestattrak: true
+          },
+          {
+            name: "Desert Eagle | Directive",
+            icon: "DesertEagleDirective",
+            canbestattrak: true
+          }
+        ],
+        classified: [
+          {
+            name: "Tec-9 | Fuel Injector",
+            icon: "Tec9FuelInjector",
+            canbestattrak: true
+          },
+          {
+            name: "AUG | Syd Mead",
+            icon: "AUGSydMead",
+            canbestattrak: true
+          },
+          {
+            name: "MP9 | Airlock",
+            icon: "MP9Airlock",
+            canbestattrak: true
+          }
+        ],
+        covert: [
+          {
+            name: "FAMAS | Roll Cage",
+            icon: "FAMASRollCage",
+            canbestattrak: true
+          },
+          {
+            name: "AK-47 | Neon Revolution",
+            icon: "AK47NeonRevolution",
+            canbestattrak: true
+          }
+        ],
+        gold: {
+          knives: ["Bayonet", "Flip Knife", "Gut Knife", "Karambit", "M9 Bayonet"],
+          patterns: ["Lore", "Gamma Doppler", "Autotronic", "Black Laminate", "Bright Water", "Freehand"]
+        }
       }
     ]
     function loadacase(){
@@ -3047,96 +3271,98 @@ document.addEventListener("DOMContentLoaded", function(){
         "origin": "Revolver Case, Operation Vanguard Case, Operation Phoenix Case, CS:GO Weapon Case 3, eSports 2014 Summer Case, eSports 2013 Winter Case, CS:GO Weapon Case 2, Winter Offensive Weapon Case, eSports 2013 Case, CS:GO Weapon Case, Operation Bravo Case",
         "rarityresult": "~0.0000519230769%"
       },
+      // 10s
       {
         "name": "★ StatTrak™ Bayonet | Night (Factory New)",
         "price": 3500,
-        "notes": "",
+        "notes": "It's as rare as it's crimson web counterpart, but costs a little more than half as much.",
         "icon": "weaponicons/knives/Bayonet/Night.png",
         "quality": "Exceedingly Rare Special Item",
-        "origin": "",
-        "rarityresult": "0.00%"
+        "origin": "Revolver Case, Operation Vanguard Case, Operation Phoenix Case, CS:GO Weapon Case 3, eSports 2014 Summer Case, eSports 2013 Winter Case, CS:GO Weapon Case 2, Winter Offensive Weapon Case, eSports 2013 Case, CS:GO Weapon Case, Operation Bravo Case",
+        "rarityresult": "~0.00000519230769%"
       },
       {
         "name": "★ Specialist Gloves | Crimson Kimono (Factory New)",
         "price": 3475.47,
-        "notes": "",
+        "notes": "These are my favorite gloves. If you get 'em, give 'em to me.",
         "icon": "weaponicons/gloves/SpecialistGlovesCrimsonKimono.png",
         "quality": "Exceedingly Rare Special Item",
-        "origin": "",
-        "rarityresult": "0.00%"
+        "origin": "Glove Case, Operation Hydra Case",
+        "rarityresult": "~0.0000140625%"
       },
       {
         "name": "★ StatTrak™ M9 Bayonet | Night (Factory New)",
         "price": 2968.24,
-        "notes": "",
+        "notes": "It's as rare as it's crimson web counterpart, but costs a little less than half as much.",
         "icon": "weaponicons/knives/M9Bayonet/Night.png",
         "quality": "Exceedingly Rare Special Item",
-        "origin": "",
-        "rarityresult": "0.00%"
+        "origin": "Revolver Case, Operation Vanguard Case, Operation Phoenix Case, CS:GO Weapon Case 3, eSports 2014 Summer Case, eSports 2013 Winter Case, CS:GO Weapon Case 2, Winter Offensive Weapon Case, eSports 2013 Case, CS:GO Weapon Case, Operation Bravo Case",
+        "rarityresult": "~0.00000519230769%"
       },
       {
         "name": "StatTrak™ AK-47 | Fire Serpent (Factory New)",
         "price": 2899.99,
-        "notes": "",
+        "notes": "I actually pulled the first copy in the game (Pre-Wipe 1, too!) within 500 cases. That being said, don't go for this gun, it's stupid rare and not worth it's price.",
         "icon": "weaponicons/AK47FireSerpent.png",
         "quality": "Covert",
-        "origin": "",
-        "rarityresult": "0.00%"
+        "origin": "Operation Bravo Case",
+        "rarityresult": "0.050625%"
       },
       {
         "name": "★ Moto Gloves | POW! (Factory New)",
         "price": 2769,
-        "notes": "",
+        "notes": "POW! HAHA!",
         "icon": "weaponicons/gloves/MotoGlovesPOW.png",
         "quality": "Exceedingly Rare Special Item",
-        "origin": "",
-        "rarityresult": "0.00%"
+        "origin": "Clutch Case",
+        "rarityresult": "~0.0000140625%"
       },
       {
         "name": "★ Sport Gloves | Superconductor (Factory New)",
         "price": 2700,
-        "notes": "",
+        "notes": "You notice how all the sport gloves (except hedge maze) are super expensive? I personally think the specialist gloves look better but whatever.",
         "icon": "weaponicons/gloves/SportGlovesSuperconductor.png",
         "quality": "Exceedingly Rare Special Item",
-        "origin": "",
-        "rarityresult": "0.00%"
+        "origin": "Glove Case, Operation Hydra Case",
+        "rarityresult": "~0.0000140625%"
       },
       {
         "name": "★ Hand Wraps | Cobalt Skulls (Factory New)",
         "price": 2681.54,
-        "notes": "",
+        "notes": "Man. I wouldn't pay a single cent for hand wraps. I think they look worse than the stock gloves.",
         "icon": "weaponicons/gloves/HandWrapsCobaltSkulls.png",
         "quality": "Exceedingly Rare Special Item",
-        "origin": "",
-        "rarityresult": "0.00%"
+        "origin": "Clutch Case",
+        "rarityresult": "~0.0000140625%"
       },
       {
         "name": "★ StatTrak™ Gut Knife | Crimson Web (Factory New)",
         "price": 2500,
-        "notes": "",
+        "notes": "Yeah, 2500$ gut knife. El problem?",
         "icon": "weaponicons/knives/GutKnife/CrimsonWeb.png",
         "quality": "Exceedingly Rare Special Item",
-        "origin": "",
-        "rarityresult": "0.00%"
+        "origin": "Revolver Case, Operation Vanguard Case, Operation Phoenix Case, CS:GO Weapon Case 3, eSports 2014 Summer Case, eSports 2013 Winter Case, CS:GO Weapon Case 2, Winter Offensive Weapon Case, eSports 2013 Case, CS:GO Weapon Case, Operation Bravo Case",
+        "rarityresult": "~0.00000519230769%"
       },
       {
         "name": "★ StatTrak™ Huntsman Knife | Night (Factory New)",
         "price": 2350,
-        "notes": "",
+        "notes": "If the huntsman case had better knives, I'd open that instead of Clutch/Glove/Gamma. I really like the Vulcan AK tho.",
         "icon": "weaponicons/knives/Huntsman/Night.png",
         "quality": "Exceedingly Rare Special Item",
-        "origin": "",
-        "rarityresult": "0.00%"
+        "origin": "Huntsman Weapon Case",
+        "rarityresult": "~0.0000259615385%"
       },
       {
         "name": "★ StatTrak™ Flip Knife | Night (Factory New)",
         "price": 2277.22,
-        "notes": "",
+        "notes": "As rare as the top item, not worth nearly as much. Truly a tragedy of humanity.",
         "icon": "weaponicons/knives/FlipKnife/Night.png",
         "quality": "Exceedingly Rare Special Item",
-        "origin": "",
-        "rarityresult": "0.00%"
+        "origin": "Revolver Case, Operation Vanguard Case, Operation Phoenix Case, CS:GO Weapon Case 3, eSports 2014 Summer Case, eSports 2013 Winter Case, CS:GO Weapon Case 2, Winter Offensive Weapon Case, eSports 2013 Case, CS:GO Weapon Case, Operation Bravo Case",
+        "rarityresult": "~0.00000519230769%"
       },
+      // 20s
       {
         "name": "★ Driver Gloves | Crimson Weave (Factory New)",
         "price": 2212,
@@ -3227,6 +3453,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "origin": "",
         "rarityresult": "0.00%"
       },
+      // 30s
       {
         "name": "★ Moto Gloves | Polygon (Factory New)",
         "price": 1621.22,
@@ -3317,6 +3544,7 @@ document.addEventListener("DOMContentLoaded", function(){
         "origin": "",
         "rarityresult": "0.00%"
       },
+      // 40s
       {
         "name": "★ Karambit | Lore (Factory New)",
         "price": 1391.61,
