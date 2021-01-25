@@ -762,6 +762,9 @@ html {
 .invItemContainer .invItem .type[data-v-0d66b73d]{
   font-size: 13px !important;
 }
+.invItemContainer .invItem[data-v-0d66b73d] {
+  border: none !important;
+}
 
 ::-webkit-scrollbar {
   width: 8px;
