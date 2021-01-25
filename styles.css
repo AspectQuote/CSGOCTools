@@ -748,13 +748,13 @@ html {
   font-size: 18px !important;
   white-space: nowrap !important;
 }
-.price {
+.invItemContainer .invItem .price[data-v-0d66b73d] {
   font-size: 16px !important;
 }
-.st {
+.invItemContainer .invItem .st[data-v-0d66b73d] {
   font-size: 11px !important;
 }
-.invItemContainer {
+.invItemContainer[data-v-0d66b73d] {
   width: 120px !important;
   min-width: 120px !important;
   height: 120px !important;
