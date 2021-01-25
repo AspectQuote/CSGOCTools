@@ -740,8 +740,8 @@ html {
 }
 
 /* Userscript Styles */
-.invItemContainer .invItem.gold {
-  border-bottom-color: green;
+.invItemInfo[data-v-0d66b73d] {
+  background: rgba(0,0,0,0);
 }
 
 ::-webkit-scrollbar {
