@@ -744,43 +744,44 @@ html {
 /* Userscript Styles */
 .invItemInfo[data-v-0d66b73d] {
   filter: none !important;
+  background: rgba(0,0,0,0.2) !important;
 }
 .secondaryName, .primaryName {
   filter: drop-shadow(0px 2px 0px black) drop-shadow(0px -2px 0px black) drop-shadow(2px 0px 0px black) drop-shadow(-2px 0px 0px black) !important;
-  font-size: 13px !important;
+  font-size: 8px !important;
   white-space: nowrap !important;
   font-style: italic;
 }
 .invItemContainer .invItem .price[data-v-0d66b73d] {
-  font-size: 12px !important;
+  font-size: 8px !important;
   filter: drop-shadow(0px 2px 0px black) drop-shadow(0px -2px 0px black) drop-shadow(2px 0px 0px black) drop-shadow(-2px 0px 0px black) !important;
 }
 .invItemContainer .invItem .st[data-v-0d66b73d] {
-  font-size: 13px !important;
+  font-size: 9px !important;
 }
 .invItemContainer[data-v-0d66b73d] {
-  width: 95px !important;
-  min-width: 95px !important;
-  height: 95px !important;
-  transition: 0.1s;
+  width: 65px !important;
+  min-width: 65px !important;
+  height: 65px !important;
+  transition: 0.25s;
 }
 .invItemContainer[data-v-0d66b73d]:hover {
-  width: 100px !important;
-  min-width: 100px !important;
-  height: 100px !important;
+  width: 70px !important;
+  min-width: 70px !important;
+  height: 70px !important;
   margin: 2.5px !important;
 }
 .invItemContainer:hover .invItem img[data-v-0d66b73d] {
-  filter: drop-shadow(6px 6px 0px #000);
+  filter: drop-shadow(8px 8px 0px #000);
 }
 .invItemContainer[data-v-0d66b73d]:active {
-  width: 95px !important;
-  min-width: 95px !important;
-  height: 95px !important;
+  width: 65px !important;
+  min-width: 65px !important;
+  height: 65px !important;
   margin: 5px !important;
 }
 .invItemContainer .invItem .type[data-v-0d66b73d]{
-  font-size: 12px !important;
+  font-size: 10px !important;
   filter: drop-shadow(0px 2px 0px black) drop-shadow(0px -2px 0px black) drop-shadow(2px 0px 0px black) drop-shadow(-2px 0px 0px black) !important;
 }
 .invItemContainer .invItem[data-v-0d66b73d] {
@@ -788,7 +789,7 @@ html {
   border-left: none !important;
   border-right: none !important;
   border-bottom-width: 2px !important;
-  border-radius: 8px;
+  border-radius: 3px;
 }
 .invItemContainer .invItem img[data-v-0d66b73d] {
   filter: none;
@@ -860,12 +861,12 @@ html {
   font-size: 14px;
 }
 .profileMain .profileContainer .showcase {
-  height: 125px !important;
-  width: 630px;
+  height: 95px !important;
+  width: 450px;
 }
 .backgroundItem {
-  width: 95px !important;
-  height: 95px !important;
+  width: 65px !important;
+  height: 65px !important;
 }
 .profileMain .profileContainer .showcase .header:before {
   content: "THIS USER'S ";
