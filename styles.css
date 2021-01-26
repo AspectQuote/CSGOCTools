@@ -945,6 +945,26 @@ html {
   width: 100%;
   text-align: center;
 }
+#sellbelowxinput {
+  background: rgba(0,0,0,0);
+  border: none;
+  border-bottom: 1px solid var(--ac);
+  font-size: 15px;
+  padding: none;
+  margin: none;
+  border-radius: 3px;
+  width: 60%;
+  color: #057a0d;
+  transition: 0.5s;
+}
+#sellbelowxinput:focus {
+  background: var(--bg);
+  color: var(--tc);
+  outline: none;
+}
+form label {
+  color: var(--ac)
+}
 ::-webkit-scrollbar:hover {
   opacity: 0.8;
 }
