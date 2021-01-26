@@ -748,6 +748,7 @@ html {
   filter: drop-shadow(0px 2px 0px black) drop-shadow(0px -2px 0px black) drop-shadow(2px 0px 0px black) drop-shadow(-2px 0px 0px black) !important;
   font-size: 13px !important;
   white-space: nowrap !important;
+  font-style: italic;
 }
 .invItemContainer .invItem .price[data-v-0d66b73d] {
   font-size: 12px !important;
