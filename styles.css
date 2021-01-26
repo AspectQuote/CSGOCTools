@@ -16,6 +16,7 @@
   --ac:#dead00;
   --dac:#a38414;
   --csw:"If you need to automate your cases, refresh the page! If you just did, make sure your computer isn't running slow!";
+  --missionloading:"If you need to automate your missions, the refresh the page! If you just did, make sure your computer isn't running slow!";
 }
 body {
   margin: 0;
@@ -965,6 +966,16 @@ html {
 }
 form label {
   color: var(--ac)
+}
+.caseOpenerComponent[data-v-345aebda] {
+  overflow-y: auto;
+}
+.missions:after {
+  content: var(--missionloading);
+  color: var(--tc);
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
 }
 ::-webkit-scrollbar {
   width: 7px;
