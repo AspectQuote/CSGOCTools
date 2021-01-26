@@ -966,12 +966,15 @@ html {
 form label {
   color: var(--ac)
 }
-::-webkit-scrollbar:hover {
-  opacity: 0.8;
+::-webkit-scrollbar {
+  width: 7px;
 }
 ::-webkit-scrollbar-track {
   background: var(--bgc);
 }
 ::-webkit-scrollbar-thumb {
   background: var(--dac);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ac);
 }
