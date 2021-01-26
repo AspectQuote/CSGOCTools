@@ -15,6 +15,7 @@
   --bg:#191919;
   --ac:#dead00;
   --dac:#a38414;
+  --csw:"If you need to automate your cases, refresh the page! If you just did, make sure your computer isn't running slow!";
 }
 body {
   margin: 0;
@@ -785,6 +786,7 @@ html {
   border-left: none !important;
   border-right: none !important;
   border-bottom-width: 2px !important;
+  border-radius: 8px;
 }
 .invItemContainer .invItem img[data-v-0d66b73d] {
   filter: none;
@@ -871,7 +873,7 @@ html {
 }
 .mission {
   height: 29px !important;
-  width: 47%;
+  width: 97%;
 }
 .missionTop .body {
   display: none !important;
@@ -893,6 +895,55 @@ html {
 }
 .reelMain .reelViewer .reelContainer .jackpotReel .sectionContainer .section .stats .percentage[data-v-2970cd19]:after {
   content: ' Chance';
+}
+.Maintenance:after {
+  content: '"If you can read this, you know that coinflip is never coming back. :(" -Aspect';
+  padding-top: 40px;
+  font-style: italic;
+}
+.navLink.router-link-active {
+  font-size: 14px;
+}
+.chatComponent .chatMessages .scrollContainer .chatScroll .messageGroup .bar .name:before {
+  content: '|';
+  padding-right: 7px;
+  font-size: 19px;
+}
+.chatComponent .chatMessages .scrollContainer .chatScroll .messageGroup .bar .name {
+  letter-spacing: 1px;
+}
+.chatComponent .chatMessages .scrollContainer .chatScroll .messageGroup .messages .message .timestamp {
+  color: var(--dac);
+}
+.chatComponent .chatMessages .scrollContainer .chatScroll .messageGroup .messages .message .messageBody:before {
+  content: '► ';
+  color: var(--dac);
+}
+.chatComponent .chatMessages .scrollContainer .chatScroll .messageGroup .messages .message .messageBody {
+  color: var(--tc);
+}
+.chatComponent .header div:nth-child(2) {
+  color: var(--ac);
+}
+.label[data-v-3f0fa95e]:before {
+  content: 'ENABLE ';
+}
+.btn:hover:not(.openCase):not(.inspectSellItem) {
+  filter: brightness(1.3);
+}
+.dropDownMenu div:nth-child(1):after {
+  content: ' (Switch to alt)';
+  text-transform: uppercase;
+}
+.dropDownMenu {
+  width: 190px;
+}
+.caseOpenerComponent .container[data-v-345aebda]:after {
+  content: var(--csw);
+  color: var(--tc);
+  display: block;
+  width: 100%;
+  text-align: center;
 }
 ::-webkit-scrollbar:hover {
   opacity: 0.8;
