@@ -741,7 +741,6 @@ html {
 
 /* Userscript Styles */
 .invItemInfo[data-v-0d66b73d] {
-  background: rgba(0,0,0,0) !important;
   filter: none !important;
 }
 .secondaryName, .primaryName {
@@ -791,12 +790,109 @@ html {
   filter: none;
   transition: 0.25s;
 }
-
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-  opacity: 0.5;
-  transition: 0.5s;
+.possibleItems {
+  font-size: 0px !important;
+}
+.possibleItems i {
+  font-size: 11px;
+  padding-right: 5px;
+}
+.possibleItems:after{
+  font-size: 13px;
+  content: "View Possible Items and Odds";
+}
+.buyCase {
+  font-size: 0px;
+}
+.buyCase:after {
+  font-size: 13px;
+  content: 'Purchase This Case';
+}
+.siteLogo {
+  height: 60px;
+  width: 90px;
+}
+.siteLogo:after {
+  content: "w/ Aspect's Script";
+  font-size: 11px;
+}
+.rarity {
+  padding-top: 5px;
+}
+.rarity.milspec:after {
+  content: ' - 80%';
+}
+.rarity.restricted:after {
+  content: ' - 16%';
+}
+.rarity.classified:after {
+  content: ' - 3%';
+}
+.rarity.covert:after {
+  content: ' - 0.75%';
+}
+.rarity.gold:after {
+  content: ' - 0.25%';
+}
+.casesOwned {
+  padding-top: 10px;
+  font-size: 12px !important;
+}
+.casesOwned:before {
+  content: 'Amount ';
+}
+.caseName {
+  font-size: 16px !important;
+  letter-spacing: 2px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid var(--bgc);
+}
+.caseSelectionText {
+  font-size: 0px;
+  padding-right: 30px;
+}
+.caseSelectionText:after {
+  content: 'Select A Case To Lose Your Money On';
+  font-size: 14px;
+}
+.profileMain .profileContainer .showcase {
+  height: 125px !important;
+  width: 630px;
+}
+.backgroundItem {
+  width: 95px !important;
+  height: 95px !important;
+}
+.profileMain .profileContainer .showcase .header:before {
+  content: "THIS USER'S ";
+}
+.profileMain .profileContainer .steamID:before {
+  content: 'USER ID: ';
+}
+.mission {
+  height: 29px !important;
+  width: 47%;
+}
+.missionTop .body {
+  display: none !important;
+}
+.missionBottom {
+  display: none !important;
+}
+.reelMain .reelViewer .reelContainer .jackpotReel .sectionContainer .section .stats .value[data-v-2970cd19] {
+  white-space: nowrap;
+}
+.reelMain .reelViewer .reelContainer .jackpotReel .sectionContainer .section .stats .value[data-v-2970cd19]:after {
+  content: ' BET';
+}
+.reelMain .reelViewer .reelContainer .jackpotReel .sectionContainer .section .stats .value[data-v-2970cd19]:before {
+  content: '$';
+}
+.reelMain .reelViewer .reelContainer .jackpotReel .sectionContainer .section .stats .percentage[data-v-2970cd19] {
+  white-space: nowrap;
+}
+.reelMain .reelViewer .reelContainer .jackpotReel .sectionContainer .section .stats .percentage[data-v-2970cd19]:after {
+  content: ' Chance';
 }
 ::-webkit-scrollbar:hover {
   opacity: 0.8;
