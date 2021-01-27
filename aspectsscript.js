@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Aspect's CSGOClicker Script
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Aspect's Script, helps make csgoclicker a little less grindy! (plus lots of QoL changes)
 // @author       Aspect!
 // @match        https://csgoclicker.net/*
@@ -19,6 +19,12 @@ Styles the scrollbars
 */
 
 (function() {
+    window.console.stdlog = console.log.bind(window.console);
+    window.console.logs = [];
+    window.console.log = function(){
+        window.console.logs.push(Array.from(arguments));
+        window.console.stdlog.apply(window.console, arguments);
+    }
     'use strict';
     try {
         var ss = document.createElement("link");
@@ -159,20 +165,20 @@ Styles the scrollbars
                         removemissions(ma.re, ma.v, ma.e, ma.s)
                     } else if ((ma.r+ma.re) >= 3) {
                         console.log("%c Aspect's Script: Missions Case 2", "color: yellow; font-size: 12px; font-style: italic; text-shadow: 0px 2px 0px black, 0px -2px 0px black, 2px 0px 0px black, -2px 0px 0px black;")
-                        root.style.setProperty("--missionloading", "'Using Missions: "+ma.r+" Recruit Missions plus "+ma.re+" filler mission(s) of REGULAR quality. (Not enough recruit missions) Do not leave this page unless you are done automating your missions.'")
-                        removemissions(ma.r-3, ma.v, ma.e, ma.s)
+                        root.style.setProperty("--missionloading", "'Using Missions: "+ma.r+" Recruit Mission(s) plus "+(3-ma.r)+" filler mission(s) of REGULAR quality. (Not enough recruit missions) Do not leave this page unless you are done automating your missions.'")
+                        removemissions(ma.re-(3-ma.r), ma.v, ma.e, ma.s)
                     } else if ((ma.r+ma.v) >= 3) {
                         console.log("%c Aspect's Script: Missions Case 3", "color: yellow; font-size: 12px; font-style: italic; text-shadow: 0px 2px 0px black, 0px -2px 0px black, 2px 0px 0px black, -2px 0px 0px black;")
-                        root.style.setProperty("--missionloading", "'Using Missions: "+ma.r+" Recruit Missions plus "+ma.v+" filler mission(s) of VETERAN quality. (Not enough recruit missions) Do not leave this page unless you are done automating your missions.'")
-                        removemissions(ma.re, ma.r-3, ma.e, ma.s)
+                        root.style.setProperty("--missionloading", "'Using Missions: "+ma.r+" Recruit Mission(s) plus "+(3-ma.r)+" filler mission(s) of VETERAN quality. (Not enough recruit missions) Do not leave this page unless you are done automating your missions.'")
+                        removemissions(ma.re, ma.v-(3-ma.r), ma.e, ma.s)
                     } else if ((ma.r+ma.e) >= 3) {
                         console.log("%c Aspect's Script: Missions Case 4", "color: yellow; font-size: 12px; font-style: italic; text-shadow: 0px 2px 0px black, 0px -2px 0px black, 2px 0px 0px black, -2px 0px 0px black;")
-                        root.style.setProperty("--missionloading", "'Using Missions: "+ma.r+" Recruit Missions plus "+ma.e+" filler mission(s) of EXPERT quality. (Not enough recruit missions) Do not leave this page unless you are done automating your missions.'")
-                        removemissions(ma.re, ma.v, ma.r-3, ma.s)
+                        root.style.setProperty("--missionloading", "'Using Missions: "+ma.r+" Recruit Mission(s) plus "+(3-ma.r)+" filler mission(s) of EXPERT quality. (Not enough recruit missions) Do not leave this page unless you are done automating your missions.'")
+                        removemissions(ma.re, ma.v, ma.e-(3-ma.r), ma.s)
                     } else if ((ma.r+ma.s) >= 3) {
                         console.log("%c Aspect's Script: Missions Case 5", "color: yellow; font-size: 12px; font-style: italic; text-shadow: 0px 2px 0px black, 0px -2px 0px black, 2px 0px 0px black, -2px 0px 0px black;")
-                        root.style.setProperty("--missionloading", "'Using Missions: "+ma.r+" Recruit Missions plus "+ma.s+" filler mission(s) of SPECIALOPS quality. (Not enough recruit missions) Do not leave this page unless you are done automating your missions.'")
-                        removemissions(ma.re, ma.v, ma.e, ma.r-3)
+                        root.style.setProperty("--missionloading", "'Using Missions: "+ma.r+" Recruit Mission(s) plus "+(3-ma.r)+" filler mission(s) of SPECIALOPS quality. (Not enough recruit missions) Do not leave this page unless you are done automating your missions.'")
+                        removemissions(ma.re, ma.v, ma.e, ma.s-(3-ma.r))
                     } else {
                         root.style.setProperty("--missionloading", "'Fatal Error: Bad missions. Wait until missions refresh then try again.'")
                     }
@@ -222,6 +228,80 @@ Styles the scrollbars
                     console.log("%c Aspect's Script: Not starting either script, not on the appropriate page.",'color: yellow; font-size: 12px; font-style: italic; text-shadow: 0px 2px 0px black, 0px -2px 0px black, 2px 0px 0px black, -2px 0px 0px black;');
                 }
         }, 2500)
+        // Custom Profiles and Stuff for Devs and donors (if I ever do donors)
+        var vips = {
+            "76561198335444084": { // Aspect!
+                color: "#dead00",
+                bio: "Creator of the script you are using right now! (Pretty cool, right?) Make sure to report bugs to me and shower me with praise!",
+                background: "https://tf2clicker.com/sitebackground.jpg",
+                backgroundgradient: "rgba(0,0,0,0)"
+            }
+        }
+        function getitemprice(st, p, s, r, f) {
+            var floatname = ''
+            if (f < 0) {
+                floatname = ''
+            } else if (f <= 0.07) {
+                floatname = ' (Factory New)'
+            } else if (f <= 0.15) {
+                floatname = ' (Minimal Wear)'
+            } else if (f <= 0.37) {
+                floatname = ' (Field-Tested)'
+            } else if (f <= 0.44) {
+                floatname = ' (Well-Worn)'
+            } else if (f <= 1) {
+                floatname = ' (Battle-Scarred)'
+            }
+            return window.PriceList[((r=='gold') ? '★ ' : '') + ((st) ? 'StatTrak™ ' : '') + p + ((s!=="Vanilla") ? " | " + s : '') + floatname]
+        }
+        function numberWithCommas(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+        setInterval(function(){
+            if (document.getElementsByClassName("profileContainer")[0]) {
+                var uivv = document.createElement('div')
+                uivv.id = 'userinventoryvalue'
+                uivv.style.cssText = 'padding-top: 20px; color: var(--tc);'
+                if (document.getElementById('userinventoryvalue')) {
+
+                } else {
+                    var mostrecentprofilelogs = window.console.logs.filter(log => log[0] == 'Profile Aquired.')
+                    console.log(mostrecentprofilelogs)
+                    if (mostrecentprofilelogs[mostrecentprofilelogs.length-1] != undefined) {
+                        var recentlog = mostrecentprofilelogs[mostrecentprofilelogs.length-1]
+                        if (recentlog[1] != undefined) {
+                            var currentprofileinventory = window.console.logs[window.console.logs.length-1][1].inventory
+                            var invval = 0
+                            for (var w=0; w<currentprofileinventory.length-1; w++) {
+                                invval += getitemprice(currentprofileinventory[w].stattrak, currentprofileinventory[w].primaryName, currentprofileinventory[w].secondaryName, currentprofileinventory[w].rarity, currentprofileinventory[w].float)
+                            }
+                            uivv.innerHTML = 'Inventory Value: <span style="color: #dead00;">$'+numberWithCommas(invval.toFixed(2))+'</span> in '+currentprofileinventory.length+' Items. DENSITY: $'+((numberWithCommas((invval/currentprofileinventory.length).toFixed(2)) != "NaN") ? (numberWithCommas((invval/currentprofileinventory.length).toFixed(2))) : 0)
+                            document.getElementsByClassName('profileContainer')[0].appendChild(uivv)
+                        }
+                    }
+                }
+                if (Object.keys(vips).includes(document.getElementsByClassName('subText')[0].textContent)) {
+                    var vipid = document.getElementsByClassName('subText')[0].textContent
+                    document.getElementsByClassName('subText')[0].textContent += " :o"
+                    document.getElementsByClassName('profileMain')[0].getElementsByClassName('background')[0].style["background-image"] = `url(${vips[vipid].background})`
+                    document.getElementsByClassName('profileMain')[0].getElementsByClassName('background')[0].style.filter = "saturate(1) grayscale(0)"
+                    document.getElementsByClassName('profileMain')[0].getElementsByClassName('background')[0].style.opacity = "0.3"
+                    document.getElementsByClassName('profileMain')[0].getElementsByClassName('name')[0].style.color = vips[vipid].color
+                    document.getElementsByClassName('profileMain')[0].style.background = vips[vipid].backgroundgradient
+                    var dbio = document.createElement('div')
+                    dbio.appendChild(document.createTextNode(vips[vipid].bio))
+                    dbio.style.cssText = "padding-top: 20px; color: var(--tc); max-width: 80%; font-style: italic;"
+                    document.getElementsByClassName('profileContainer')[0].appendChild(dbio)
+                } else if (Object.keys(vips).includes(document.getElementsByClassName('subText')[0].textContent.replace(" :o", ""))) {
+
+                } else {
+                    document.getElementsByClassName('profileMain')[0].getElementsByClassName('background')[0].style.removeProperty("background-image")
+                    document.getElementsByClassName('profileMain')[0].getElementsByClassName('background')[0].style.removeProperty("filter")
+                    document.getElementsByClassName('profileMain')[0].getElementsByClassName('background')[0].style.removeProperty("opacity")
+                    document.getElementsByClassName('profileMain')[0].style.removeProperty("background")
+                }
+            }
+        }, 100)
         console.log("Loaded Aspect's CSGOClicker Script Successfully!");
     } catch(e) {
         console.log("An unexpected error occurred while loading Aspect's script.",e)
