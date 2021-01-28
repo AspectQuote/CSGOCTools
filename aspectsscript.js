@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Aspect's CSGOClicker Script
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.352
 // @description  Aspect's Script, helps make csgoclicker a little less grindy! (plus lots of QoL changes)
 // @author       Aspect!
 // @match        https://csgoclicker.net/*
@@ -32,6 +32,8 @@ Styles the scrollbars
         ss.type = "text/css";
         ss.rel = "stylesheet";
         ss.href = "https://aspectquote.github.io/CSGOCTools/styles.css";
+        var exsc = document.createElement("script")
+        ss.src = ''
         document.getElementsByTagName("head")[0].appendChild(ss);
         setTimeout(function(){
             if (document.getElementsByClassName("container")[0]) { // For some reason, the Case Opening UI has it's container's class set to a generic name, you'd think that'd get confusing but whatever
@@ -182,6 +184,11 @@ Styles the scrollbars
                     } else {
                         root.style.setProperty("--missionloading", "'Fatal Error: Bad missions. Wait until missions refresh then try again.'")
                     }
+                    if (ma.r > 3) {
+                        for (var i=0; i<(ma.r-3); i++) {
+                            document.querySelector(".recruit").remove();
+                        }
+                    }
                     function redeem(missionnum) {
                         var button = document.getElementsByClassName('btn')[missionnum]
                         if (button != undefined) {
@@ -228,12 +235,30 @@ Styles the scrollbars
                     console.log("%c Aspect's Script: Not starting either script, not on the appropriate page.",'color: yellow; font-size: 12px; font-style: italic; text-shadow: 0px 2px 0px black, 0px -2px 0px black, 2px 0px 0px black, -2px 0px 0px black;');
                 }
         }, 2500)
-        // Custom Profiles and Stuff for Devs and donors (if I ever do donors)
+        // Custom Profiles and Stuff for Devs, notable people, and donors (if I ever do donors)
         var vips = {
             "76561198335444084": { // Aspect!
                 color: "#dead00",
                 bio: "Creator of the script you are using right now! (Pretty cool, right?) Make sure to report bugs to me and shower me with praise!",
                 background: "https://tf2clicker.com/sitebackground.jpg",
+                backgroundgradient: "rgba(0,0,0,0)"
+            },
+            "76561198023420319": { // Banned
+                color: "#dead00",
+                bio: "Frontend Developer of CSGOClicker and Mega Cool dude!",
+                background: "https://aspectquote.github.io/CSGOCTools/icons/bannedbg.jpg",
+                backgroundgradient: "rgba(0,0,0,0)"
+            },
+            "76561198040594845": { // Roflzilla
+                color: "#057a0d",
+                bio: "Backend Developer of CSGOClicker and Uber Mega Cool dude!",
+                background: "https://aspectquote.github.io/CSGOCTools/icons/roflbg.jpg",
+                backgroundgradient: "rgba(0,0,0,0)"
+            },
+            "76561198074625962": { // KingOfKFCJamal
+                color: "#dead00",
+                bio: "Creator of a CSGOClicker Classic mod that added lots of stuff! (And he's super cool.)",
+                background: "https://aspectquote.github.io/CSGOCTools/icons/jamal.png",
                 backgroundgradient: "rgba(0,0,0,0)"
             }
         }
@@ -272,7 +297,7 @@ Styles the scrollbars
                         if (recentlog[1] != undefined) {
                             var currentprofileinventory = window.console.logs[window.console.logs.length-1][1].inventory
                             var invval = 0
-                            for (var w=0; w<currentprofileinventory.length-1; w++) {
+                            for (var w=0; w<currentprofileinventory.length; w++) {
                                 invval += getitemprice(currentprofileinventory[w].stattrak, currentprofileinventory[w].primaryName, currentprofileinventory[w].secondaryName, currentprofileinventory[w].rarity, currentprofileinventory[w].float)
                             }
                             uivv.innerHTML = 'Inventory Value: <span style="color: #dead00;">$'+numberWithCommas(invval.toFixed(2))+'</span> in '+currentprofileinventory.length+' Items. DENSITY: $'+((numberWithCommas((invval/currentprofileinventory.length).toFixed(2)) != "NaN") ? (numberWithCommas((invval/currentprofileinventory.length).toFixed(2))) : 0)
