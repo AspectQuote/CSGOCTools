@@ -19,6 +19,10 @@ Styles the scrollbars
 */
 
 (function() {
+    // Hello! Change that variable below to change the site's theme color!
+    var THEMECOLOR = "white"
+
+
     window.console.stdlog = console.log.bind(window.console);
     window.console.logs = [];
     window.console.log = function(){
@@ -35,6 +39,8 @@ Styles the scrollbars
         var exsc = document.createElement("script")
         ss.src = ''
         document.getElementsByTagName("head")[0].appendChild(ss);
+        root.style.setProperty("--ac", THEMECOLOR)
+        root.style.setProperty("--dac", THEMECOLOR)
         setTimeout(function(){
             if (document.getElementsByClassName("container")[0]) { // For some reason, the Case Opening UI has it's container's class set to a generic name, you'd think that'd get confusing but whatever
                 console.log("%c Aspect's Script: Starting case open script, user is on the appropriate page.",'color: green; font-size: 12px; font-style: italic; text-shadow: 0px 2px 0px black, 0px -2px 0px black, 2px 0px 0px black, -2px 0px 0px black;');
@@ -60,7 +66,11 @@ Styles the scrollbars
                 sellbelowxform.type = 'text'
                 sellbelowxform.id = 'sellbelowxinput'
                 sellbelowxform.name = 'sellbelowxinput'
-                sellbelowxform.value = 50
+                if (localStorage.getItem('aspectsminprice')) {
+                    sellbelowxform.value = localStorage.getItem('aspectsminprice')
+                } else {
+                    sellbelowxform.value = 50
+                }
                 sellbelowxform.placeholder = 'Any Number. Price of skins you want to autosell'
                 optionsform.appendChild(sellbelowxname)
                 optionsform.appendChild(sellbelowxform)
@@ -75,7 +85,11 @@ Styles the scrollbars
                 stopwhenmoneyisatxform.type = 'text'
                 stopwhenmoneyisatxform.id = 'stopwhenmoneyisatxinput'
                 stopwhenmoneyisatxform.name = 'stopwhenmoneyisatxinput'
-                stopwhenmoneyisatxform.value = 25
+                if (localStorage.getItem('aspectsminwallet')) {
+                    sellbelowxform.value = localStorage.getItem('aspectsminwallet')
+                } else {
+                    sellbelowxform.value = 25
+                }
                 stopwhenmoneyisatxform.placeholder = 'Any Number. When the script stops opening cases'
                 optionsform.appendChild(stopwhenmoneyisatxname)
                 optionsform.appendChild(stopwhenmoneyisatxform)
@@ -133,6 +147,8 @@ Styles the scrollbars
                                 sessionstats.itemssold++
                                 sessionstats.totalvalueofallitemssold += itemunboxedprice
                             }
+                            localStorage.setItem('aspectsminprice', document.getElementById("sellbelowxinput").value)
+                            localStorage.setItem('aspectsminwallet', document.getElementById('stopwhenmoneyisatxinput').value)
                         }
                     }
                 }, 7000)
@@ -234,7 +250,7 @@ Styles the scrollbars
                 } else {
                     console.log("%c Aspect's Script: Not starting either script, not on the appropriate page.",'color: yellow; font-size: 12px; font-style: italic; text-shadow: 0px 2px 0px black, 0px -2px 0px black, 2px 0px 0px black, -2px 0px 0px black;');
                 }
-        }, 2500)
+        }, 5000)
         // Custom Profiles and Stuff for Devs, notable people, and donors (if I ever do donors)
         var vips = {
             "76561198335444084": { // Aspect!
@@ -300,7 +316,7 @@ Styles the scrollbars
                             for (var w=0; w<currentprofileinventory.length; w++) {
                                 invval += getitemprice(currentprofileinventory[w].stattrak, currentprofileinventory[w].primaryName, currentprofileinventory[w].secondaryName, currentprofileinventory[w].rarity, currentprofileinventory[w].float)
                             }
-                            uivv.innerHTML = 'Inventory Value: <span style="color: #dead00;">$'+numberWithCommas(invval.toFixed(2))+'</span> in '+currentprofileinventory.length+' Items. DENSITY: $'+((numberWithCommas((invval/currentprofileinventory.length).toFixed(2)) != "NaN") ? (numberWithCommas((invval/currentprofileinventory.length).toFixed(2))) : 0)
+                            uivv.innerHTML = 'Inventory Value: <span style="color: var(--ac);">$'+numberWithCommas(invval.toFixed(2))+'</span> in '+currentprofileinventory.length+' Items. DENSITY: $'+((numberWithCommas((invval/currentprofileinventory.length).toFixed(2)) != "NaN") ? (numberWithCommas((invval/currentprofileinventory.length).toFixed(2))) : 0)
                             document.getElementsByClassName('profileContainer')[0].appendChild(uivv)
                         }
                     }
@@ -327,6 +343,70 @@ Styles the scrollbars
                 }
             }
         }, 100)
+        setInterval(function(){
+            if (document.getElementsByClassName("float")[0]) {
+                if (document.getElementsByClassName("floatbar").length) {
+                    document.getElementById('fpb').style.width = (Number(document.getElementsByClassName('float')[0].textContent.replace("FLOAT: ","").replace("FNMWFTWWBS",""))*100)+"%"
+                } else {
+                    var fb = document.createElement("div")
+                    fb.className = 'floatbar'
+                    fb.style.cssText = "margin-left: 5%; margin-top: 20px; width: 90%; background: rgba(255,255,255,0.1); position: relative; color: white; height: 15px; border-radius: 4px; border: 1px solid var(--ac);"
+
+                    var ffn = document.createElement("div")
+                    ffn.style.cssText = "position: absolute; left: 3.5%; top: -15px; color: inherit; transform: translateX(-50%);"
+                    ffn.appendChild(document.createTextNode("FN"))
+                    ffn.className = "floatnamedisp"
+                    fb.appendChild(ffn)
+
+                    var fmw = document.createElement("div")
+                    fmw.style.cssText = "position: absolute; left: 11%; top: -15px; color: inherit; transform: translateX(-50%);"
+                    fmw.appendChild(document.createTextNode("MW"))
+                    fmw.className = "floatnamedisp"
+                    fb.appendChild(fmw)
+
+                    var fft = document.createElement("div")
+                    fft.style.cssText = "position: absolute; left: 26%; top: -15px; color: inherit; transform: translateX(-50%);"
+                    fft.appendChild(document.createTextNode("FT"))
+                    fft.className = "floatnamedisp"
+                    fb.appendChild(fft)
+
+                    var fww = document.createElement("div")
+                    fww.style.cssText = "position: absolute; left: 41%; top: -15px; color: inherit; transform: translateX(-50%);"
+                    fww.appendChild(document.createTextNode("WW"))
+                    fww.className = "floatnamedisp"
+                    fb.appendChild(fww)
+
+                    var fbs = document.createElement("div")
+                    fbs.style.cssText = "position: absolute; left: 70%; top: -15px; color: inherit; transform: translateX(-50%);"
+                    fbs.appendChild(document.createTextNode("BS"))
+                    fbs.className = "floatnamedisp"
+                    fb.appendChild(fbs)
+
+                    var fd1 = document.createElement("div")
+                    fd1.style.cssText = "width: 0px; border-right: 1px solid var(--ac); height: 100%; position: absolute; left: 7%; bottom: 0px;"
+                    var fd2 = document.createElement("div")
+                    fd2.style.cssText = "width: 0px; border-right: 1px solid var(--ac); height: 100%; position: absolute; left: 15%; bottom: 0px;"
+                    var fd3 = document.createElement("div")
+                    fd3.style.cssText = "width: 0px; border-right: 1px solid var(--ac); height: 100%; position: absolute; left: 37%; bottom: 0px;"
+                    var fd4 = document.createElement("div")
+                    fd4.style.cssText = "width: 0px; border-right: 1px solid var(--ac); height: 100%; position: absolute; left: 44%; bottom: 0px;"
+                    fb.appendChild(fd1)
+                    fb.appendChild(fd2)
+                    fb.appendChild(fd3)
+                    fb.appendChild(fd4)
+
+                    var floatprogressbar = document.createElement("div")
+                    floatprogressbar.id = 'fpb'
+                    floatprogressbar.style.cssText = "width: "+(Number(document.getElementsByClassName('float')[0].textContent.replace("FLOAT: ",""))*100)+"%; background: green; height: 100%; border-radius: 4px;"
+                    fb.appendChild(floatprogressbar)
+
+                    var fd = document.getElementsByClassName("float")[0].appendChild(fb)
+                    console.log("%c Aspect's Script: Showed the float bar.",'color: green; font-size: 12px; font-style: italic; text-shadow: 0px 2px 0px black, 0px -2px 0px black, 2px 0px 0px black, -2px 0px 0px black;');
+                }
+            } else {
+
+            }
+        }, 250)
         console.log("Loaded Aspect's CSGOClicker Script Successfully!");
     } catch(e) {
         console.log("An unexpected error occurred while loading Aspect's script.",e)
