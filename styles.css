@@ -993,16 +993,6 @@ form label {
 .inspectItemComponent .inspectItemContainer .inspectItem .name {
   color: white;
 }
-.secondaryName, .primaryName {
-  color: var(--ac);
-}
-.invItemContainer .invItem .price[data-v-0d66b73d] {
-  color: var(--ac);
-  opacity: 0.8;
-}
-.invItemContainer .invItem .type[data-v-0d66b73d] {
-  color: var(--ac);
-}
 .inspectItemComponent .inspectItemContainer .inspectItem {
   width: 440px;
 }
