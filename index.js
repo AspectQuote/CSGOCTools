@@ -1,12 +1,15 @@
 casespage = false
 document.addEventListener("DOMContentLoaded", function(){
-  var dayssincecf = Math.floor(Math.abs((1582959600000-Date.now())/(24 * 60 * 60 * 1000)))
+  var dayssincecf = Math.floor(Math.abs((1582959600000-1628458086901)/(24 * 60 * 60 * 1000)))
+  var dayssincelastupdate = Math.floor(Math.abs((1628458086901-Date.now())/(24 * 60 * 60 * 1000)))
   document.getElementById("leftnavbarbottomflavor").innerHTML=`
     Built from scratch with ♥ by Aspect. <a href="https://csgoclicker.net" target="_blank">CSGOClicker</a> created by Banned and Roflzilla.
     <br/>
     CS:GO and all related assets are property of Valve Corp.
     <br/>
-    It has been <span>${dayssincecf}</span> days since coinflip went down :(
+    Coinflip was down for <span>${dayssincecf}</span> days, but it's back now!
+    <br/>
+    It has been <span>${dayssincelastupdate}</span> days since the last update to CSGOClicker.
   `
   if (casespage) {
     function getknifeicon(knife, pattern){
